@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(215, 20%, 12%);
+  --muted: hsl(210, 40%, 98%);
+  --muted-foreground: hsl(215, 16%, 47%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(215, 20%, 12%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(215, 20%, 12%);
+  --border: hsl(215, 14%, 89%);
+  --input: hsl(215, 14%, 89%);
+  --primary: hsl(217, 91%, 60%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(210, 40%, 98%);
+  --secondary-foreground: hsl(215, 25%, 27%);
+  --accent: hsl(210, 40%, 98%);
+  --accent-foreground: hsl(215, 25%, 27%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(215, 20%, 12%);
+  --radius: 0.5rem;
+  --academic-blue: hsl(217, 91%, 60%);
+  --academic-slate: hsl(215, 16%, 47%);
+  --academic-sky: hsl(199, 89%, 48%);
+  --academic-light: hsl(210, 40%, 98%);
+  --academic-dark: hsl(215, 25%, 27%);
+}
+
+.dark {
+  --background: hsl(215, 28%, 7%);
+  --foreground: hsl(210, 40%, 98%);
+  --muted: hsl(215, 23%, 12%);
+  --muted-foreground: hsl(215, 11%, 65%);
+  --popover: hsl(215, 28%, 7%);
+  --popover-foreground: hsl(210, 40%, 98%);
+  --card: hsl(215, 28%, 7%);
+  --card-foreground: hsl(210, 40%, 98%);
+  --border: hsl(215, 23%, 12%);
+  --input: hsl(215, 23%, 12%);
+  --primary: hsl(217, 91%, 60%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(215, 23%, 12%);
+  --secondary-foreground: hsl(210, 40%, 98%);
+  --accent: hsl(215, 23%, 12%);
+  --accent-foreground: hsl(210, 40%, 98%);
+  --destructive: hsl(0, 63%, 31%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(215, 34%, 84%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-inter antialiased bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .text-academic-blue {
+    color: var(--academic-blue);
+  }
+  
+  .text-academic-slate {
+    color: var(--academic-slate);
+  }
+  
+  .text-academic-sky {
+    color: var(--academic-sky);
+  }
+  
+  .text-academic-light {
+    color: var(--academic-light);
+  }
+  
+  .text-academic-dark {
+    color: var(--academic-dark);
+  }
+  
+  .bg-academic-blue {
+    background-color: var(--academic-blue);
+  }
+  
+  .bg-academic-slate {
+    background-color: var(--academic-slate);
+  }
+  
+  .bg-academic-sky {
+    background-color: var(--academic-sky);
+  }
+  
+  .bg-academic-light {
+    background-color: var(--academic-light);
+  }
+  
+  .bg-academic-dark {
+    background-color: var(--academic-dark);
+  }
+  
+  .border-academic-blue {
+    border-color: var(--academic-blue);
+  }
+  
+  .hover\:bg-academic-blue:hover {
+    background-color: var(--academic-blue);
+  }
+  
+  .hover\:text-academic-blue:hover {
+    color: var(--academic-blue);
+  }
+}

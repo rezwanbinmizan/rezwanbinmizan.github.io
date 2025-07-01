@@ -97,19 +97,19 @@ export function PhotoGallery() {
         
         <Tabs defaultValue="conferences" className="w-full">
           <TabsList className="grid w-full grid-cols-4 mb-8">
-            <TabsTrigger value="conferences">Conferences</TabsTrigger>
-            <TabsTrigger value="posters">Posters</TabsTrigger>
-            <TabsTrigger value="research">Research</TabsTrigger>
-            <TabsTrigger value="profile">Profile</TabsTrigger>
+            <TabsTrigger value="conferences">Academic Events</TabsTrigger>
+            <TabsTrigger value="posters">Presentations</TabsTrigger>
+            <TabsTrigger value="research">Research Work</TabsTrigger>
+            <TabsTrigger value="profile">Professional</TabsTrigger>
           </TabsList>
           
           <TabsContent value="conferences" className="space-y-6">
             <div className="text-center mb-6">
               <h3 className="text-xl font-semibold text-academic-dark mb-2">
-                Conference Presentations
+                Academic Events
               </h3>
               <p className="text-gray-600">
-                Photos from various conferences and academic presentations
+                Photos from academic conferences, workshops, and presentations
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -122,10 +122,10 @@ export function PhotoGallery() {
           <TabsContent value="posters" className="space-y-6">
             <div className="text-center mb-6">
               <h3 className="text-xl font-semibold text-academic-dark mb-2">
-                Poster Presentations
+                Presentations
               </h3>
               <p className="text-gray-600">
-                Academic poster presentations and research showcases
+                Academic presentations, talks, and poster sessions
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -141,7 +141,7 @@ export function PhotoGallery() {
                 Research Work
               </h3>
               <p className="text-gray-600">
-                Laboratory work and research activities
+                Research activities, computational work, and academic environment
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -154,10 +154,10 @@ export function PhotoGallery() {
           <TabsContent value="profile" className="space-y-6">
             <div className="text-center mb-6">
               <h3 className="text-xl font-semibold text-academic-dark mb-2">
-                Professional Photos
+                Professional
               </h3>
               <p className="text-gray-600">
-                Professional headshots and portraits
+                Professional headshots and formal photographs
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

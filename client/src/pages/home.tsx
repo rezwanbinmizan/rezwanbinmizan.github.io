@@ -5,6 +5,7 @@ import { Publications } from "@/components/publications";
 import { Education } from "@/components/education";
 import { Experience } from "@/components/experience";
 import { Skills } from "@/components/skills";
+import { PhotoGallery } from "@/components/photo-gallery";
 import { Contact } from "@/components/contact";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Education />
       <Experience />
       <Skills />
+      <PhotoGallery />
       <Contact />
       
       {/* Footer */}

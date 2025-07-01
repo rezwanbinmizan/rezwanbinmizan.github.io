@@ -181,5 +181,68 @@ export const portfolioData = {
       organization: "Ministry of Finance, Bangladesh",
       period: "2021"
     }
-  ]
+  ],
+
+  gallery: {
+    profilePhotos: [
+      {
+        src: "/images/profile-photo.jpg",
+        alt: "Md Rezwan Bin Mizan - Professional Photo",
+        caption: "Professional headshot"
+      }
+    ],
+    conferencePhotos: [
+      {
+        src: "/images/conference-1.jpg",
+        alt: "Presenting at Mathematical Opportunities in Digital Twins Conference",
+        caption: "Poster presentation at Mathematical Opportunities in Digital Twins, George Mason University, December 2023",
+        event: "Mathematical Opportunities in Digital Twins",
+        year: "2023"
+      },
+      {
+        src: "/images/conference-2.jpg",
+        alt: "SIAM Texas-Louisiana Section Conference",
+        caption: "Presenting at SIAM Texas-Louisiana Section Conference, Baylor University, October 2024",
+        event: "SIAM Texas-Louisiana Section",
+        year: "2024"
+      },
+      {
+        src: "/images/conference-3.jpg",
+        alt: "TAMIDS Scientific Machine Learning Summer School",
+        caption: "Participating in TAMIDS Scientific Machine Learning Summer School, Texas A&M University, May 2025",
+        event: "TAMIDS SciML Summer School",
+        year: "2025"
+      }
+    ],
+    researchPhotos: [
+      {
+        src: "/images/research-1.jpg",
+        alt: "Research work visualization",
+        caption: "Visualization of Reduced Order Models for Kuramoto-Sivashinsky Equation",
+        description: "Computational results showing POD-based reduced order models"
+      },
+      {
+        src: "/images/research-2.jpg",
+        alt: "Laboratory work",
+        caption: "Working in the computational mathematics lab at University of Houston",
+        description: "Developing numerical algorithms for fluid dynamics simulations"
+      }
+    ],
+    posterPhotos: [
+      {
+        src: "/images/poster-1.jpg",
+        alt: "Poster: Reduced Order Modeling of Kuramoto-Sivashinsky Equation",
+        caption: "Poster presentation on ROM techniques for the Kuramoto-Sivashinsky equation",
+        event: "Mathematical Opportunities in Digital Twins",
+        year: "2023"
+      },
+      {
+        src: "/images/poster-2.jpg",
+        alt: "Poster: POD-ROMs for gKSE",
+        caption: "Poster on Proper Orthogonal Decomposition ROMs for generalized Kuramoto-Sivashinsky Equation",
+        event: "SIAM Texas-Louisiana Section",
+        year: "2024"
+      }
+    ]
+  }
 };

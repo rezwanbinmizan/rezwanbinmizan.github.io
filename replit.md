@@ -27,12 +27,13 @@ This is a modern academic portfolio web application built for Md Rezwan Bin Miza
 - **Pages**: Single-page application with home page and 404 handling
 - **Components**: Modular components for each portfolio section
   - Navigation with smooth scrolling
-  - Hero section with download CV functionality
+  - Hero section with download CV functionality and profile photo
   - Research interests showcase
   - Publications listing
   - Education timeline
   - Experience and presentations
   - Skills with progress indicators
+  - Photo gallery with organized categories (conferences, posters, research, profile)
   - Contact form with toast notifications
 - **Styling**: Academic-themed design with professional color palette
 
@@ -98,6 +99,7 @@ This is a modern academic portfolio web application built for Md Rezwan Bin Miza
 ```
 Changelog:
 - June 30, 2025. Initial setup
+- January 1, 2025. Added photo gallery feature with organized categories for conferences, posters, research, and profile photos. Removed database integration per user preference for simple file-based updates.
 ```
 
 ## User Preferences

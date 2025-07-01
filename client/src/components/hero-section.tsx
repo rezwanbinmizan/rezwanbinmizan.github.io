@@ -48,11 +48,22 @@ export function HeroSection() {
             </div>
           </div>
           <div className="lg:col-span-1">
-            <div className="bg-gray-200 rounded-2xl aspect-square flex items-center justify-center text-gray-500">
+            <div className="bg-gray-200 rounded-2xl aspect-square flex items-center justify-center text-gray-500 relative overflow-hidden">
+              {/* Profile photo placeholder - will show actual photo when added */}
               <div className="text-center">
                 <User className="mx-auto mb-4 h-16 w-16" />
-                <p className="text-sm">Professional Photo</p>
+                <p className="text-sm font-medium">Add your photo here</p>
+                <p className="text-xs text-gray-400 mt-1">
+                  Place image at: /images/profile-photo.jpg
+                </p>
               </div>
+              
+              {/* This will be uncommented when you add your actual photo */}
+              {/* <img 
+                src="/images/profile-photo.jpg" 
+                alt="Md Rezwan Bin Mizan - Professional Photo"
+                className="w-full h-full object-cover"
+              /> */}
             </div>
           </div>
         </div>

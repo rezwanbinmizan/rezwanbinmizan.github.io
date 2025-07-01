@@ -176,12 +176,12 @@ export function PhotoGallery() {
           </h3>
           <div className="space-y-3 text-sm text-gray-600">
             <p><strong>Step 1:</strong> Create a folder called <code className="bg-gray-200 px-2 py-1 rounded">images</code> in <code className="bg-gray-200 px-2 py-1 rounded">client/public/</code></p>
-            <p><strong>Step 2:</strong> Add your photos to this folder with these recommended names:</p>
+            <p><strong>Step 2:</strong> Add your photos to this folder with these suggested names:</p>
             <ul className="list-disc list-inside ml-4 space-y-1">
-              <li><code>profile-photo.jpg</code> - Your professional headshot</li>
-              <li><code>conference-1.jpg, conference-2.jpg</code> - Conference photos</li>
-              <li><code>poster-1.jpg, poster-2.jpg</code> - Poster presentation photos</li>
-              <li><code>research-1.jpg, research-2.jpg</code> - Research activity photos</li>
+              <li><code>profile-1.jpg</code> - Your professional headshot</li>
+              <li><code>conference-1.jpg, conference-2.jpg</code> - Any conference photos</li>
+              <li><code>poster-1.jpg, poster-2.jpg</code> - Any poster presentation photos</li>
+              <li><code>research-1.jpg, research-2.jpg</code> - Any research activity photos</li>
             </ul>
             <p><strong>Step 3:</strong> The photos will automatically appear in the gallery!</p>
             <p className="text-academic-blue"><strong>Tip:</strong> You can also update the photo descriptions in <code className="bg-gray-200 px-2 py-1 rounded">client/src/lib/portfolio-data.ts</code></p>

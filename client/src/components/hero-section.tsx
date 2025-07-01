@@ -6,8 +6,8 @@ export function HeroSection() {
   const { personal } = portfolioData;
 
   const handleDownloadCV = () => {
-    // In a real implementation, this would download the actual CV file
-    window.open("/cv.pdf", "_blank");
+    // Download the actual uploaded CV file
+    window.open("/attached_assets/CV (1)_1751325633098.pdf", "_blank");
   };
 
   const handleContactMe = () => {
@@ -54,14 +54,14 @@ export function HeroSection() {
                 <User className="mx-auto mb-4 h-16 w-16" />
                 <p className="text-sm font-medium">Add your photo here</p>
                 <p className="text-xs text-gray-400 mt-1">
-                  Place image at: /images/profile-photo.jpg
+                  Place image at: /images/profile-1.jpg
                 </p>
               </div>
               
               {/* This will be uncommented when you add your actual photo */}
               {/* <img 
-                src="/images/profile-photo.jpg" 
-                alt="Md Rezwan Bin Mizan - Professional Photo"
+                src="/images/profile-1.jpg" 
+                alt="Professional Photo"
                 className="w-full h-full object-cover"
               /> */}
             </div>

@@ -186,63 +186,66 @@ export const portfolioData = {
   gallery: {
     profilePhotos: [
       {
-        src: "/images/profile-photo.jpg",
-        alt: "Md Rezwan Bin Mizan - Professional Photo",
-        caption: "Professional headshot"
+        src: "/images/profile-1.jpg",
+        alt: "Professional headshot",
+        caption: "Professional photo"
       }
     ],
     conferencePhotos: [
       {
         src: "/images/conference-1.jpg",
-        alt: "Presenting at Mathematical Opportunities in Digital Twins Conference",
-        caption: "Poster presentation at Mathematical Opportunities in Digital Twins, George Mason University, December 2023",
-        event: "Mathematical Opportunities in Digital Twins",
-        year: "2023"
-      },
-      {
-        src: "/images/conference-2.jpg",
-        alt: "SIAM Texas-Louisiana Section Conference",
-        caption: "Presenting at SIAM Texas-Louisiana Section Conference, Baylor University, October 2024",
-        event: "SIAM Texas-Louisiana Section",
+        alt: "Conference presentation",
+        caption: "Academic conference presentation",
+        event: "Academic Conference",
         year: "2024"
       },
       {
-        src: "/images/conference-3.jpg",
-        alt: "TAMIDS Scientific Machine Learning Summer School",
-        caption: "Participating in TAMIDS Scientific Machine Learning Summer School, Texas A&M University, May 2025",
-        event: "TAMIDS SciML Summer School",
-        year: "2025"
+        src: "/images/conference-2.jpg",
+        alt: "Research presentation",
+        caption: "Research presentation at academic venue",
+        event: "Research Conference",
+        year: "2024"
       }
     ],
     researchPhotos: [
       {
         src: "/images/research-1.jpg",
-        alt: "Research work visualization",
-        caption: "Visualization of Reduced Order Models for Kuramoto-Sivashinsky Equation",
-        description: "Computational results showing POD-based reduced order models"
+        alt: "Research work",
+        caption: "Mathematical research activities",
+        description: "Research work in computational mathematics"
       },
       {
         src: "/images/research-2.jpg",
-        alt: "Laboratory work",
-        caption: "Working in the computational mathematics lab at University of Houston",
-        description: "Developing numerical algorithms for fluid dynamics simulations"
+        alt: "Academic work",
+        caption: "Academic research environment",
+        description: "Working on mathematical problems and simulations"
       }
     ],
     posterPhotos: [
       {
         src: "/images/poster-1.jpg",
-        alt: "Poster: Reduced Order Modeling of Kuramoto-Sivashinsky Equation",
-        caption: "Poster presentation on ROM techniques for the Kuramoto-Sivashinsky equation",
-        event: "Mathematical Opportunities in Digital Twins",
-        year: "2023"
+        alt: "Research poster",
+        caption: "Academic poster presentation",
+        event: "Academic Conference",
+        year: "2024"
       },
       {
         src: "/images/poster-2.jpg",
-        alt: "Poster: POD-ROMs for gKSE",
-        caption: "Poster on Proper Orthogonal Decomposition ROMs for generalized Kuramoto-Sivashinsky Equation",
-        event: "SIAM Texas-Louisiana Section",
+        alt: "Mathematical poster",
+        caption: "Mathematical research poster",
+        event: "Mathematics Conference",
         year: "2024"
       }
     ]
+  },
+
+  documents: {
+    cv: {
+      filename: "CV (1)_1751325633098.pdf",
+      title: "Curriculum Vitae",
+      description: "Complete academic CV including research experience, publications, education background, teaching experience, and professional achievements. Updated with latest research work in Reduced Order Models and Computational Fluid Dynamics.",
+      lastUpdated: "January 2025",
+      downloadPath: "/attached_assets/CV (1)_1751325633098.pdf"
+    }
   }
 };

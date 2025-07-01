@@ -127,7 +127,7 @@ export const portfolioData = {
       title: "SIAM Texas-Louisiana Section",
       venue: "Baylor University",
       date: "October 11-13, 2024",
-      type: "Talk",
+      type: "Poster",
       presentation: "POD–ROMs for the Generalized Kuramoto-Sivashinsky Equation (gKSE)"
     },
     {

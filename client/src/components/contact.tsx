@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import { Mail, Phone, MapPin, Download, Linkedin, ExternalLink } from "lucide-react";
+import { Mail, Download, Linkedin, ExternalLink } from "lucide-react";
 import { portfolioData } from "@/lib/portfolio-data";
 
 export function Contact() {
@@ -65,28 +65,8 @@ export function Contact() {
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-center">
-                    <div className="w-10 h-10 bg-academic-sky rounded-lg flex items-center justify-center mr-4">
-                      <Phone className="text-white h-5 w-5" />
-                    </div>
-                    <div>
-                      <p className="text-sm text-gray-500">Phone</p>
-                      <p className="text-academic-dark font-medium">
-                        {personal.phone}
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center mr-4">
-                      <MapPin className="text-white h-5 w-5" />
-                    </div>
-                    <div>
-                      <p className="text-sm text-gray-500">Address</p>
-                      <p className="text-academic-dark font-medium">
-                        {personal.address}
-                      </p>
-                    </div>
-                  </div>
+                  
+                  
                 </div>
               </CardContent>
             </Card>

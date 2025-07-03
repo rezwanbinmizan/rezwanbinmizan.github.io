@@ -100,6 +100,7 @@ This is a modern academic portfolio web application built for Md Rezwan Bin Miza
 Changelog:
 - June 30, 2025. Initial setup
 - January 1, 2025. Added photo gallery feature with organized categories for conferences, posters, research, and profile photos. Removed database integration per user preference for simple file-based updates.
+- January 4, 2025. Updated photo gallery tabs to use general terms (Academic Events, Presentations, Research Work, Professional) instead of specific names. Removed CV download section and phone number from contact page as all information is already displayed on the portfolio.
 ```
 
 ## User Preferences

@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import { Mail, Download, Linkedin, ExternalLink } from "lucide-react";
+import { Mail, Linkedin, ExternalLink } from "lucide-react";
 import { portfolioData } from "@/lib/portfolio-data";
 
 export function Contact() {
@@ -33,10 +33,7 @@ export function Contact() {
     setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
-  const handleDownloadCV = () => {
-    // Download the actual uploaded CV file
-    window.open("/attached_assets/CV (1)_1751325633098.pdf", "_blank");
-  };
+
 
   return (
     <section id="contact" className="py-16 bg-academic-light">
@@ -71,30 +68,7 @@ export function Contact() {
               </CardContent>
             </Card>
 
-            {/* CV Download Section */}
-            <Card className="bg-white shadow-sm">
-              <CardContent className="p-6">
-                <h4 className="text-lg font-semibold text-academic-dark mb-3 flex items-center">
-                  <Download className="mr-2 h-5 w-5" />
-                  Curriculum Vitae
-                </h4>
-                <p className="text-sm text-gray-600 mb-4">
-                  Complete academic CV including research experience, publications, education background, 
-                  teaching experience, and professional achievements. Updated with latest research work 
-                  in Reduced Order Models and Computational Fluid Dynamics.
-                </p>
-                <div className="text-xs text-gray-500 mb-4">
-                  <strong>Last Updated:</strong> January 2025
-                </div>
-                <Button 
-                  onClick={handleDownloadCV}
-                  className="w-full bg-academic-blue text-white hover:bg-blue-700 transition-colors font-medium"
-                >
-                  <Download className="mr-2 h-4 w-4" />
-                  Download Full CV (PDF)
-                </Button>
-              </CardContent>
-            </Card>
+
 
             {/* Quick Actions */}
             <div className="space-y-4">

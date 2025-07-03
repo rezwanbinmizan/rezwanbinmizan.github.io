@@ -4,7 +4,6 @@ import { ResearchInterests } from "@/components/research-interests";
 import { Publications } from "@/components/publications";
 import { Education } from "@/components/education";
 import { Experience } from "@/components/experience";
-import { Skills } from "@/components/skills";
 import { PhotoGallery } from "@/components/photo-gallery";
 import { Contact } from "@/components/contact";
 
@@ -13,12 +12,11 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <Navigation />
       <HeroSection />
-      <ResearchInterests />
       <Publications />
       <Education />
       <Experience />
-      <Skills />
       <PhotoGallery />
+      <ResearchInterests />
       <Contact />
       
       {/* Footer */}

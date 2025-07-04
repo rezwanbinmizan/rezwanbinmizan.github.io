@@ -129,6 +129,13 @@ export const portfolioData = {
       presentation: "POD–ROMs for the Generalized Kuramoto-Sivashinsky Equation (gKSE)"
     },
     {
+      title: "Graduate Student Paper Presentation",
+      venue: "University of Houston",
+      date: "October 11-13, 2024",
+      type: "Talk",
+      presentation: "POD–ROMs for the Generalized Kuramoto-Sivashinsky Equation (gKSE)"
+    },
+    {
       title: "TAMIDS SciML Summer School",
       venue: "Texas A&M University",
       date: "May 12–16, 2025",
@@ -183,11 +190,11 @@ export const portfolioData = {
 
   documents: {
     cv: {
-      filename: "CV (1)_1751325633098.pdf",
+      filename: "Rezwan_CV_1751649977158.pdf",
       title: "Curriculum Vitae",
       description: "Complete academic CV including research experience, publications, education background, teaching experience, and professional achievements. Updated with latest research work in Reduced Order Models and Computational Fluid Dynamics.",
       lastUpdated: "January 2025",
-      downloadPath: "/attached_assets/CV (1)_1751325633098.pdf"
+      downloadPath: "/attached_assets/Rezwan_CV_1751649977158.pdf"
     }
   }
 };

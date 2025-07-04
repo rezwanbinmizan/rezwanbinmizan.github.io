@@ -3,8 +3,6 @@ export const portfolioData = {
     name: "Md Rezwan Bin Mizan",
     title: "PhD Candidate in Mathematics",
     email: "mbinmiza@cougarnet.uh.edu",
-    phone: "+1 346-599-2287",
-    address: "7500, Plum Creek Dr #4802, Houston, Texas-77012",
     summary: "Research Assistant at the University of Houston, specializing in Reduced Order Models (ROM), Computational Fluid Dynamics (CFD), and Deep Learning applications in mathematical modeling. Currently pursuing PhD in Mathematics with focus on advanced numerical optimization techniques."
   },
 

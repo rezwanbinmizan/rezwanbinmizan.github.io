@@ -10,6 +10,8 @@ import { portfolioData } from "@/lib/portfolio-data";
 export function PhotoGallery() {
   const { photoGallery } = portfolioData;
   const [selectedImage, setSelectedImage] = useState<any>(null);
+  
+
 
   const PhotoCard = ({ photo, category }: { photo: any; category: string }) => (
     <Card className="bg-white shadow-sm hover:shadow-md transition-all duration-300 group cursor-pointer">

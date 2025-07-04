@@ -181,36 +181,6 @@ export const portfolioData = {
     }
   ],
 
-  photoGallery: {
-    conferences: [
-      {
-        url: "/images/conference-1.jpg",
-        title: "GSPP Talk",
-        description: "Presenting at Graduate Student Poster Presentation event"
-      },
-      {
-        url: "/images/conference-2.jpg", 
-        title: "GSPP Talk",
-        description: "Delivering research presentation at Graduate Student Poster Presentation"
-      }
-    ],
-    posters: [
-      {
-        url: "/images/poster-1.jpg",
-        title: "Reduced Order Modeling of Kuramoto-Sivashinsky Equation",
-        description: "Poster presentation on reduced order modeling research using proper orthogonal decomposition"
-      }
-    ],
-    research: [],
-    profile: [
-      {
-        url: "/images/profile-1.jpg",
-        title: "Professional Photo",
-        description: "Professional photograph at the US Capitol building, Washington DC"
-      }
-    ]
-  },
-
   documents: {
     cv: {
       filename: "CV (1)_1751325633098.pdf",

@@ -1,71 +1,51 @@
-import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Camera, Calendar, MapPin, X, ZoomIn } from "lucide-react";
-import { portfolioData } from "@/lib/portfolio-data";
+import { Camera } from "lucide-react";
 
 export function PhotoGallery() {
-  const { photoGallery } = portfolioData;
-  const [selectedImage, setSelectedImage] = useState<any>(null);
-  
+  // Simple photo data - just replace the image files to update
+  const photos = {
+    conferences: [
+      { src: "/images/conference-1.jpg", title: "GSPP Talk 1" },
+      { src: "/images/conference-2.jpg", title: "GSPP Talk 2" }
+    ],
+    posters: [
+      { src: "/images/poster-1.jpg", title: "Research Poster Presentation" }
+    ],
+    research: [
+      // Add research photos here when available
+    ],
+    profile: [
+      { src: "/images/profile-1.jpg", title: "Professional Photo" }
+    ]
+  };
 
-
-  const PhotoCard = ({ photo, category }: { photo: any; category: string }) => (
-    <Card className="bg-white shadow-sm hover:shadow-md transition-all duration-300 group cursor-pointer">
+  const PhotoCard = ({ photo }: { photo: { src: string; title: string } }) => (
+    <Card className="bg-white shadow-sm hover:shadow-md transition-all duration-300">
       <CardContent className="p-0">
         <div className="relative overflow-hidden rounded-lg">
           <img 
-            src={photo.url} 
+            src={photo.src} 
             alt={photo.title}
             className="w-full aspect-[4/3] object-cover"
+            onError={(e) => {
+              // Hide broken images
+              (e.target as HTMLElement).style.display = 'none';
+            }}
           />
-          
-          {/* Hover overlay */}
-          <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-            <Dialog>
-              <DialogTrigger asChild>
-                <Button
-                  variant="secondary"
-                  size="sm"
-                  className="bg-white/90 text-black hover:bg-white"
-                  onClick={() => setSelectedImage(photo)}
-                >
-                  <ZoomIn className="mr-2 h-4 w-4" />
-                  View Details
-                </Button>
-              </DialogTrigger>
-              <DialogContent className="max-w-4xl">
-                <div className="space-y-4">
-                  <img 
-                    src={photo.url} 
-                    alt={photo.title}
-                    className="w-full max-h-96 object-contain rounded-lg"
-                  />
-                  <div className="space-y-2">
-                    <h3 className="text-lg font-semibold text-academic-dark">
-                      {photo.title}
-                    </h3>
-                    <p className="text-gray-600">{photo.description}</p>
-                  </div>
-                </div>
-              </DialogContent>
-            </Dialog>
-          </div>
-          
-          <div className="p-4">
-            <h4 className="font-medium text-academic-dark mb-2 line-clamp-2">
-              {photo.title}
-            </h4>
-            <p className="text-xs text-gray-500 line-clamp-2">
-              {photo.description}
-            </p>
+          <div className="p-4 bg-white">
+            <h4 className="font-medium text-gray-800">{photo.title}</h4>
           </div>
         </div>
       </CardContent>
     </Card>
+  );
+
+  const EmptySection = ({ message }: { message: string }) => (
+    <div className="text-center py-12">
+      <Camera className="mx-auto mb-4 h-12 w-12 text-gray-300" />
+      <p className="text-gray-500">{message}</p>
+    </div>
   );
 
   return (
@@ -92,11 +72,15 @@ export function PhotoGallery() {
                 Photos from academic conferences, workshops, and presentations
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {photoGallery.conferences.map((photo, index) => (
-                <PhotoCard key={index} photo={photo} category="conference" />
-              ))}
-            </div>
+            {photos.conferences.length > 0 ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {photos.conferences.map((photo, index) => (
+                  <PhotoCard key={index} photo={photo} />
+                ))}
+              </div>
+            ) : (
+              <EmptySection message="No conference photos yet" />
+            )}
           </TabsContent>
           
           <TabsContent value="posters" className="space-y-6">
@@ -108,11 +92,15 @@ export function PhotoGallery() {
                 Academic presentations, talks, and poster sessions
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {photoGallery.posters.map((photo, index) => (
-                <PhotoCard key={index} photo={photo} category="poster" />
-              ))}
-            </div>
+            {photos.posters.length > 0 ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {photos.posters.map((photo, index) => (
+                  <PhotoCard key={index} photo={photo} />
+                ))}
+              </div>
+            ) : (
+              <EmptySection message="No presentation photos yet" />
+            )}
           </TabsContent>
           
           <TabsContent value="research" className="space-y-6">
@@ -124,11 +112,15 @@ export function PhotoGallery() {
                 Research activities, computational work, and academic environment
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {photoGallery.research.map((photo, index) => (
-                <PhotoCard key={index} photo={photo} category="research" />
-              ))}
-            </div>
+            {photos.research.length > 0 ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {photos.research.map((photo, index) => (
+                  <PhotoCard key={index} photo={photo} />
+                ))}
+              </div>
+            ) : (
+              <EmptySection message="No research photos yet" />
+            )}
           </TabsContent>
           
           <TabsContent value="profile" className="space-y-6">
@@ -140,31 +132,37 @@ export function PhotoGallery() {
                 Professional headshots and formal photographs
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {photoGallery.profile.map((photo, index) => (
-                <PhotoCard key={index} photo={photo} category="profile" />
-              ))}
-            </div>
+            {photos.profile.length > 0 ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {photos.profile.map((photo, index) => (
+                  <PhotoCard key={index} photo={photo} />
+                ))}
+              </div>
+            ) : (
+              <EmptySection message="No professional photos yet" />
+            )}
           </TabsContent>
         </Tabs>
 
-        {/* Instructions for adding photos */}
-        <div className="mt-12 bg-academic-light rounded-lg p-6">
-          <h3 className="text-lg font-semibold text-academic-dark mb-4 flex items-center">
+        {/* Simple instructions */}
+        <div className="mt-12 bg-blue-50 rounded-lg p-6">
+          <h3 className="text-lg font-semibold text-gray-800 mb-4 flex items-center">
             <Camera className="mr-2 h-5 w-5" />
-            How to Add Your Photos
+            How to Update Photos (Simple Method)
           </h3>
-          <div className="space-y-3 text-sm text-gray-600">
-            <p><strong>Step 1:</strong> Create a folder called <code className="bg-gray-200 px-2 py-1 rounded">images</code> in <code className="bg-gray-200 px-2 py-1 rounded">client/public/</code></p>
-            <p><strong>Step 2:</strong> Add your photos to this folder with these suggested names:</p>
-            <ul className="list-disc list-inside ml-4 space-y-1">
-              <li><code>profile-1.jpg</code> - Your professional headshot</li>
-              <li><code>conference-1.jpg, conference-2.jpg</code> - Any conference photos</li>
-              <li><code>poster-1.jpg, poster-2.jpg</code> - Any poster presentation photos</li>
-              <li><code>research-1.jpg, research-2.jpg</code> - Any research activity photos</li>
-            </ul>
-            <p><strong>Step 3:</strong> The photos will automatically appear in the gallery!</p>
-            <p className="text-academic-blue"><strong>Tip:</strong> You can also update the photo descriptions in <code className="bg-gray-200 px-2 py-1 rounded">client/src/lib/portfolio-data.ts</code></p>
+          <div className="space-y-2 text-sm text-gray-600">
+            <p><strong>To add or replace photos:</strong></p>
+            <ol className="list-decimal list-inside ml-4 space-y-1">
+              <li>Go to the folder: <code className="bg-gray-200 px-2 py-1 rounded">client/public/images/</code></li>
+              <li>Replace any of these files with your new photos:</li>
+              <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
+                <li><code>conference-1.jpg</code> and <code>conference-2.jpg</code> (your conference talks)</li>
+                <li><code>poster-1.jpg</code> (your poster presentation)</li>
+                <li><code>profile-1.jpg</code> (your professional photo)</li>
+              </ul>
+              <li>Keep the same file names - the photos will update automatically!</li>
+            </ol>
+            <p className="text-blue-600 mt-3"><strong>That's it!</strong> No code editing needed.</p>
           </div>
         </div>
       </div>

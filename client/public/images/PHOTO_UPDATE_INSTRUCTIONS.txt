@@ -1,0 +1,26 @@
+SIMPLE PHOTO UPDATE INSTRUCTIONS
+================================
+
+To update photos on your portfolio website:
+
+1. REPLACE these files with your new photos (keep the same names):
+   
+   conference-1.jpg  →  Your first conference/talk photo
+   conference-2.jpg  →  Your second conference/talk photo  
+   poster-1.jpg      →  Your poster presentation photo
+   profile-1.jpg     →  Your professional/headshot photo
+
+2. IMPORTANT: Keep the exact same file names!
+
+3. The website will automatically show your new photos.
+
+4. That's it! No code editing needed.
+
+CURRENT PHOTOS:
+- conference-1.jpg: GSPP Talk photo 1
+- conference-2.jpg: GSPP Talk photo 2  
+- poster-1.jpg: Kuramoto-Sivashinsky Equation poster
+- profile-1.jpg: Professional photo at US Capitol
+
+TO ADD MORE PHOTOS:
+If you want more than 2 conference photos or multiple posters, just tell me and I can easily add more slots (like conference-3.jpg, poster-2.jpg, etc.)

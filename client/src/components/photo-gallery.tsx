@@ -146,27 +146,7 @@ export function PhotoGallery() {
           </TabsContent>
         </Tabs>
 
-        {/* Simple instructions */}
-        <div className="mt-12 bg-blue-50 rounded-lg p-6">
-          <h3 className="text-lg font-semibold text-gray-800 mb-4 flex items-center">
-            <Camera className="mr-2 h-5 w-5" />
-            How to Update Photos (Simple Method)
-          </h3>
-          <div className="space-y-2 text-sm text-gray-600">
-            <p><strong>To add or replace photos:</strong></p>
-            <ol className="list-decimal list-inside ml-4 space-y-1">
-              <li>Go to the folder: <code className="bg-gray-200 px-2 py-1 rounded">client/public/images/</code></li>
-              <li>Replace any of these files with your new photos:</li>
-              <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
-                <li><code>conference-1.jpg</code> and <code>conference-2.jpg</code> (your conference talks)</li>
-                <li><code>poster-1.jpg</code> (your poster presentation)</li>
-                <li><code>profile-1.jpg</code> (your professional photo)</li>
-              </ul>
-              <li>Keep the same file names - the photos will update automatically!</li>
-            </ol>
-            <p className="text-blue-600 mt-3"><strong>That's it!</strong> No code editing needed.</p>
-          </div>
-        </div>
+
       </div>
     </section>
   );

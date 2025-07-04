@@ -23,14 +23,16 @@ export function PhotoGallery() {
   const PhotoCard = ({ photo }: { photo: { src: string; title: string } }) => (
     <Card className="bg-white shadow-sm hover:shadow-md transition-all duration-300">
       <CardContent className="p-0">
-        <div className="relative overflow-hidden rounded-lg">
+        <div className="relative overflow-hidden rounded-lg bg-gray-200">
           <img 
             src={photo.src} 
             alt={photo.title}
-            className="w-full aspect-[4/3] object-cover"
+            className="w-full h-64 object-cover"
             onError={(e) => {
-              // Hide broken images
-              (e.target as HTMLElement).style.display = 'none';
+              console.error('Failed to load image:', photo.src);
+            }}
+            onLoad={() => {
+              console.log('Successfully loaded image:', photo.src);
             }}
           />
           <div className="p-4 bg-white">
@@ -55,7 +57,7 @@ export function PhotoGallery() {
           Photo Gallery
         </h2>
         
-        <Tabs defaultValue="conferences" className="w-full">
+        <Tabs defaultValue="posters" className="w-full">
           <TabsList className="grid w-full grid-cols-4 mb-8">
             <TabsTrigger value="conferences">Academic Events</TabsTrigger>
             <TabsTrigger value="posters">Presentations</TabsTrigger>

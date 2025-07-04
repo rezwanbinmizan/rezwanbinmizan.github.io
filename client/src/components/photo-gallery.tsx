@@ -77,7 +77,7 @@ export function PhotoGallery() {
           Photo Gallery
         </h2>
         
-        <Tabs defaultValue="conferences" className="w-full">
+        <Tabs defaultValue="posters" className="w-full">
           <TabsList className="grid w-full grid-cols-4 mb-8">
             <TabsTrigger value="conferences">Academic Events</TabsTrigger>
             <TabsTrigger value="posters">Presentations</TabsTrigger>
@@ -111,7 +111,11 @@ export function PhotoGallery() {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-yellow-200 p-4">
-              <p className="col-span-full text-black">Posters count: {photoGallery.posters.length}</p>
+              <p className="col-span-full text-black font-bold">Posters count: {photoGallery.posters.length}</p>
+              <div className="col-span-full">
+                <p className="text-black">Testing direct image:</p>
+                <img src="/images/poster-1.jpg" alt="test" className="w-32 h-32 border-4 border-green-500" />
+              </div>
               {photoGallery.posters.map((photo, index) => (
                 <PhotoCard key={index} photo={photo} category="poster" />
               ))}

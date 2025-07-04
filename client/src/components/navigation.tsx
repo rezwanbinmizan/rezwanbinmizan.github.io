@@ -5,12 +5,12 @@ import { Menu } from "lucide-react";
 
 const navigationItems = [
   { href: "#home", label: "Home" },
-  { href: "#publications", label: "Publications" },
+  { href: "#research", label: "Research" },
   { href: "#education", label: "Education" },
+  { href: "#teaching", label: "Teaching" },
   { href: "#experience", label: "Experience" },
   { href: "#gallery", label: "Gallery" },
   { href: "#blog", label: "Blog" },
-  { href: "#research", label: "Research" },
   { href: "#contact", label: "Contact" }
 ];
 

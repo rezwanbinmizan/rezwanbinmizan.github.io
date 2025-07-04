@@ -1,8 +1,8 @@
 import { Navigation } from "@/components/navigation";
 import { HeroSection } from "@/components/hero-section";
-import { ResearchInterests } from "@/components/research-interests";
-import { Publications } from "@/components/publications";
+import { Research } from "@/components/research";
 import { Education } from "@/components/education";
+import { Teaching } from "@/components/teaching";
 import { Experience } from "@/components/experience";
 import { PhotoGallery } from "@/components/photo-gallery";
 import { Blog } from "@/components/blog";
@@ -13,12 +13,12 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <Navigation />
       <HeroSection />
-      <Publications />
+      <Research />
       <Education />
+      <Teaching />
       <Experience />
       <PhotoGallery />
       <Blog />
-      <ResearchInterests />
       <Contact />
       
       {/* Footer */}

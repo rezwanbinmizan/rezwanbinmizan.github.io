@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Download, Mail, User } from "lucide-react";
+import { Download, Mail, Linkedin } from "lucide-react";
 import { portfolioData } from "@/lib/portfolio-data";
 
 export function HeroSection() {
@@ -36,6 +36,14 @@ export function HeroSection() {
               >
                 <Download className="mr-2 h-4 w-4" />
                 Download CV
+              </Button>
+              <Button 
+                variant="outline"
+                onClick={() => window.open(personal.linkedin, "_blank")}
+                className="border-academic-blue text-academic-blue hover:bg-academic-blue hover:text-white transition-colors font-medium"
+              >
+                <Linkedin className="mr-2 h-4 w-4" />
+                LinkedIn
               </Button>
               <Button 
                 variant="outline"

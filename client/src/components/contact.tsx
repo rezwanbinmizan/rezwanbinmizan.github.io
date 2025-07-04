@@ -76,6 +76,7 @@ export function Contact() {
                 <Button 
                   variant="outline"
                   className="border-academic-blue text-academic-blue hover:bg-academic-blue hover:text-white transition-colors font-medium"
+                  onClick={() => window.open(personal.linkedin, "_blank")}
                 >
                   <Linkedin className="mr-2 h-4 w-4" />
                   LinkedIn

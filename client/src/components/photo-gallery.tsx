@@ -57,29 +57,6 @@ export function PhotoGallery() {
           Photo Gallery
         </h2>
         
-        {/* Test images directly */}
-        <div className="mb-8 p-4 bg-gray-100 rounded">
-          <p className="mb-2 font-bold">Direct Image Test:</p>
-          <div className="flex gap-4">
-            <div>
-              <p className="text-sm">conference-1:</p>
-              <img src="/images/conference-1.jpg" alt="test1" className="w-32 h-32 object-cover border" />
-            </div>
-            <div>
-              <p className="text-sm">conference-2:</p>
-              <img src="/images/conference-2.jpg" alt="test2" className="w-32 h-32 object-cover border" />
-            </div>
-            <div>
-              <p className="text-sm">profile-1:</p>
-              <img src="/images/profile-1.jpg" alt="test3" className="w-32 h-32 object-cover border" />
-            </div>
-            <div>
-              <p className="text-sm">poster-1:</p>
-              <img src="/images/poster-1.jpg" alt="test4" className="w-32 h-32 object-cover border" />
-            </div>
-          </div>
-        </div>
-        
         <Tabs defaultValue="conferences" className="w-full">
           <TabsList className="grid w-full grid-cols-4 mb-8">
             <TabsTrigger value="conferences">Academic Events</TabsTrigger>

@@ -183,58 +183,32 @@ export const portfolioData = {
     }
   ],
 
-  gallery: {
-    profilePhotos: [
+  photoGallery: {
+    conferences: [
       {
-        src: "/images/profile-1.jpg",
-        alt: "Professional headshot",
-        caption: "Professional photo"
-      }
-    ],
-    conferencePhotos: [
-      {
-        src: "/images/conference-1.jpg",
-        alt: "Conference presentation",
-        caption: "Academic conference presentation",
-        event: "Academic Conference",
-        year: "2024"
+        url: "/images/conference-1.jpg",
+        title: "Academic Conference Presentation",
+        description: "Presenting research at an academic conference"
       },
       {
-        src: "/images/conference-2.jpg",
-        alt: "Research presentation",
-        caption: "Research presentation at academic venue",
-        event: "Research Conference",
-        year: "2024"
+        url: "/images/conference-2.jpg", 
+        title: "Research Talk",
+        description: "Delivering a research presentation"
       }
     ],
-    researchPhotos: [
+    posters: [
       {
-        src: "/images/research-1.jpg",
-        alt: "Research work",
-        caption: "Mathematical research activities",
-        description: "Research work in computational mathematics"
-      },
-      {
-        src: "/images/research-2.jpg",
-        alt: "Academic work",
-        caption: "Academic research environment",
-        description: "Working on mathematical problems and simulations"
+        url: "/images/poster-1.jpg",
+        title: "Reduced Order Modeling of Kuramoto-Sivashinsky Equation",
+        description: "Poster presentation on reduced order modeling research using proper orthogonal decomposition"
       }
     ],
-    posterPhotos: [
+    research: [],
+    profile: [
       {
-        src: "/images/poster-1.jpg",
-        alt: "Research poster",
-        caption: "Academic poster presentation",
-        event: "Academic Conference",
-        year: "2024"
-      },
-      {
-        src: "/images/poster-2.jpg",
-        alt: "Mathematical poster",
-        caption: "Mathematical research poster",
-        event: "Mathematics Conference",
-        year: "2024"
+        url: "/images/profile-1.jpg",
+        title: "Professional Photo",
+        description: "Professional photograph at the US Capitol building, Washington DC"
       }
     ]
   },

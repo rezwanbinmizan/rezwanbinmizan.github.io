@@ -20,7 +20,9 @@ export function PhotoGallery() {
           <img 
             src={photo.url} 
             alt={photo.title}
-            className="w-full aspect-[4/3] object-cover"
+            className="w-full aspect-[4/3] object-cover border-4 border-red-500"
+            onError={(e) => console.error("Image failed to load:", photo.url)}
+            onLoad={() => console.log("Image loaded successfully:", photo.url)}
           />
           
           {/* Hover overlay */}
@@ -108,7 +110,8 @@ export function PhotoGallery() {
                 Academic presentations, talks, and poster sessions
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-yellow-200 p-4">
+              <p className="col-span-full text-black">Posters count: {photoGallery.posters.length}</p>
               {photoGallery.posters.map((photo, index) => (
                 <PhotoCard key={index} photo={photo} category="poster" />
               ))}
@@ -140,7 +143,8 @@ export function PhotoGallery() {
                 Professional headshots and formal photographs
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 bg-blue-200 p-4">
+              <p className="col-span-full text-black">Profile count: {photoGallery.profile.length}</p>
               {photoGallery.profile.length > 0 ? (
                 photoGallery.profile.map((photo, index) => (
                   <PhotoCard key={index} photo={photo} category="profile" />

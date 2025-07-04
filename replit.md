@@ -101,6 +101,7 @@ Changelog:
 - June 30, 2025. Initial setup
 - January 1, 2025. Added photo gallery feature with organized categories for conferences, posters, research, and profile photos. Removed database integration per user preference for simple file-based updates.
 - January 4, 2025. Updated photo gallery tabs to use general terms (Academic Events, Presentations, Research Work, Professional) instead of specific names. Removed CV download section and phone number from contact page as all information is already displayed on the portfolio.
+- January 4, 2025. Simplified photo system with fixed file names for easy updates. Added profile photo to hero section. Added Blog section with "coming soon" placeholder for future academic writing.
 ```
 
 ## User Preferences

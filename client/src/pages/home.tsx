@@ -5,6 +5,7 @@ import { Publications } from "@/components/publications";
 import { Education } from "@/components/education";
 import { Experience } from "@/components/experience";
 import { PhotoGallery } from "@/components/photo-gallery";
+import { Blog } from "@/components/blog";
 import { Contact } from "@/components/contact";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Education />
       <Experience />
       <PhotoGallery />
+      <Blog />
       <ResearchInterests />
       <Contact />
       

@@ -8,80 +8,58 @@ import { Camera, Calendar, MapPin, X, ZoomIn } from "lucide-react";
 import { portfolioData } from "@/lib/portfolio-data";
 
 export function PhotoGallery() {
-  const { gallery } = portfolioData;
+  const { photoGallery } = portfolioData;
   const [selectedImage, setSelectedImage] = useState<any>(null);
 
   const PhotoCard = ({ photo, category }: { photo: any; category: string }) => (
     <Card className="bg-white shadow-sm hover:shadow-md transition-all duration-300 group cursor-pointer">
       <CardContent className="p-0">
         <div className="relative overflow-hidden rounded-lg">
-          {/* Placeholder for actual image */}
-          <div className="aspect-[4/3] bg-gray-200 flex items-center justify-center text-gray-500 relative">
-            <div className="text-center">
-              <Camera className="mx-auto mb-2 h-12 w-12" />
-              <p className="text-sm font-medium">{photo.alt}</p>
-              <p className="text-xs text-gray-400 mt-1">Add photo: {photo.src}</p>
-            </div>
-            
-            {/* Hover overlay */}
-            <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <Dialog>
-                <DialogTrigger asChild>
-                  <Button
-                    variant="secondary"
-                    size="sm"
-                    className="bg-white/90 text-black hover:bg-white"
-                    onClick={() => setSelectedImage(photo)}
-                  >
-                    <ZoomIn className="mr-2 h-4 w-4" />
-                    View Details
-                  </Button>
-                </DialogTrigger>
-                <DialogContent className="max-w-4xl">
-                  <div className="space-y-4">
-                    <div className="aspect-[4/3] bg-gray-200 rounded-lg flex items-center justify-center">
-                      <div className="text-center text-gray-500">
-                        <Camera className="mx-auto mb-2 h-16 w-16" />
-                        <p className="font-medium">{photo.alt}</p>
-                        <p className="text-sm text-gray-400 mt-1">Photo placeholder</p>
-                      </div>
-                    </div>
-                    <div className="space-y-2">
-                      <h3 className="text-lg font-semibold text-academic-dark">
-                        {photo.caption}
-                      </h3>
-                      {photo.event && (
-                        <div className="flex items-center text-sm text-gray-600">
-                          <Calendar className="mr-2 h-4 w-4" />
-                          {photo.event} ({photo.year})
-                        </div>
-                      )}
-                      {photo.description && (
-                        <p className="text-gray-600">{photo.description}</p>
-                      )}
-                    </div>
+          <img 
+            src={photo.url} 
+            alt={photo.title}
+            className="w-full aspect-[4/3] object-cover"
+          />
+          
+          {/* Hover overlay */}
+          <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button
+                  variant="secondary"
+                  size="sm"
+                  className="bg-white/90 text-black hover:bg-white"
+                  onClick={() => setSelectedImage(photo)}
+                >
+                  <ZoomIn className="mr-2 h-4 w-4" />
+                  View Details
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="max-w-4xl">
+                <div className="space-y-4">
+                  <img 
+                    src={photo.url} 
+                    alt={photo.title}
+                    className="w-full max-h-96 object-contain rounded-lg"
+                  />
+                  <div className="space-y-2">
+                    <h3 className="text-lg font-semibold text-academic-dark">
+                      {photo.title}
+                    </h3>
+                    <p className="text-gray-600">{photo.description}</p>
                   </div>
-                </DialogContent>
-              </Dialog>
-            </div>
+                </div>
+              </DialogContent>
+            </Dialog>
           </div>
           
           <div className="p-4">
             <h4 className="font-medium text-academic-dark mb-2 line-clamp-2">
-              {photo.caption}
+              {photo.title}
             </h4>
-            <div className="flex items-center justify-between">
-              {photo.year && (
-                <Badge variant="outline" className="text-xs">
-                  {photo.year}
-                </Badge>
-              )}
-              {photo.event && (
-                <span className="text-xs text-gray-500 truncate ml-2">
-                  {photo.event}
-                </span>
-              )}
-            </div>
+            <p className="text-xs text-gray-500 line-clamp-2">
+              {photo.description}
+            </p>
           </div>
         </div>
       </CardContent>
@@ -113,7 +91,7 @@ export function PhotoGallery() {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {gallery.conferencePhotos.map((photo, index) => (
+              {photoGallery.conferences.map((photo, index) => (
                 <PhotoCard key={index} photo={photo} category="conference" />
               ))}
             </div>
@@ -129,7 +107,7 @@ export function PhotoGallery() {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {gallery.posterPhotos.map((photo, index) => (
+              {photoGallery.posters.map((photo, index) => (
                 <PhotoCard key={index} photo={photo} category="poster" />
               ))}
             </div>
@@ -145,7 +123,7 @@ export function PhotoGallery() {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {gallery.researchPhotos.map((photo, index) => (
+              {photoGallery.research.map((photo, index) => (
                 <PhotoCard key={index} photo={photo} category="research" />
               ))}
             </div>
@@ -161,7 +139,7 @@ export function PhotoGallery() {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {gallery.profilePhotos.map((photo, index) => (
+              {photoGallery.profile.map((photo, index) => (
                 <PhotoCard key={index} photo={photo} category="profile" />
               ))}
             </div>

@@ -187,13 +187,13 @@ export const portfolioData = {
     conferences: [
       {
         url: "/images/conference-1.jpg",
-        title: "Academic Conference Presentation",
-        description: "Presenting research at an academic conference"
+        title: "GSPP Talk",
+        description: "Presenting at Graduate Student Poster Presentation event"
       },
       {
         url: "/images/conference-2.jpg", 
-        title: "Research Talk",
-        description: "Delivering a research presentation"
+        title: "GSPP Talk",
+        description: "Delivering research presentation at Graduate Student Poster Presentation"
       }
     ],
     posters: [

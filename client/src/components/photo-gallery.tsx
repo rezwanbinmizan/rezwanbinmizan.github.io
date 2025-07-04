@@ -20,9 +20,7 @@ export function PhotoGallery() {
           <img 
             src={photo.url} 
             alt={photo.title}
-            className="w-full aspect-[4/3] object-cover border-4 border-red-500"
-            onError={(e) => console.error("Image failed to load:", photo.url)}
-            onLoad={() => console.log("Image loaded successfully:", photo.url)}
+            className="w-full aspect-[4/3] object-cover"
           />
           
           {/* Hover overlay */}
@@ -77,7 +75,7 @@ export function PhotoGallery() {
           Photo Gallery
         </h2>
         
-        <Tabs defaultValue="posters" className="w-full">
+        <Tabs defaultValue="conferences" className="w-full">
           <TabsList className="grid w-full grid-cols-4 mb-8">
             <TabsTrigger value="conferences">Academic Events</TabsTrigger>
             <TabsTrigger value="posters">Presentations</TabsTrigger>
@@ -110,12 +108,7 @@ export function PhotoGallery() {
                 Academic presentations, talks, and poster sessions
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-yellow-200 p-4">
-              <p className="col-span-full text-black font-bold">Posters count: {photoGallery.posters.length}</p>
-              <div className="col-span-full">
-                <p className="text-black">Testing direct image:</p>
-                <img src="/images/poster-1.jpg" alt="test" className="w-32 h-32 border-4 border-green-500" />
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {photoGallery.posters.map((photo, index) => (
                 <PhotoCard key={index} photo={photo} category="poster" />
               ))}
@@ -147,18 +140,10 @@ export function PhotoGallery() {
                 Professional headshots and formal photographs
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 bg-blue-200 p-4">
-              <p className="col-span-full text-black">Profile count: {photoGallery.profile.length}</p>
-              {photoGallery.profile.length > 0 ? (
-                photoGallery.profile.map((photo, index) => (
-                  <PhotoCard key={index} photo={photo} category="profile" />
-                ))
-              ) : (
-                <div className="col-span-full text-center py-8">
-                  <Camera className="mx-auto mb-4 h-12 w-12 text-gray-400" />
-                  <p className="text-gray-500">No professional photos yet</p>
-                </div>
-              )}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {photoGallery.profile.map((photo, index) => (
+                <PhotoCard key={index} photo={photo} category="profile" />
+              ))}
             </div>
           </TabsContent>
         </Tabs>

@@ -80,7 +80,19 @@ export function Research() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  {/* Simple publications view based on available data */}
+                  {publication.url && (
+                    <div className="flex gap-3 pt-2">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="text-xs"
+                        onClick={() => window.open(publication.url, '_blank')}
+                      >
+                        <ExternalLink className="mr-1 h-3 w-3" />
+                        {publication.status === "preprint" ? "View on arXiv" : "View Paper"}
+                      </Button>
+                    </div>
+                  )}
                 </CardContent>
               </Card>
             ))}

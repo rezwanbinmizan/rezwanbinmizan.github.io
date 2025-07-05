@@ -36,7 +36,8 @@ export const portfolioData = {
       title: "A parametric tensor ROM for the shallow water dam break problem",
       authors: "Md Rezwan Bin Mizan, Maxim Olshanskii, and Ilya Timofeyev",
       reference: "arXiv preprint, arXiv:2506.20007, 2025",
-      status: "preprint"
+      status: "preprint",
+      url: "https://arxiv.org/abs/2506.20007"
     },
     {
       year: "2025",
@@ -44,7 +45,8 @@ export const portfolioData = {
       title: "Parametric Reduced Order Models for the Generalized Kuramoto–Sivashinsky Equations",
       authors: "Md Rezwan Bin Mizan, Maxim Olshanskii, and Ilya Timofeyev",
       reference: "arXiv preprint, arXiv:2502.02718, 2025",
-      status: "preprint"
+      status: "preprint",
+      url: "https://arxiv.org/abs/2502.02718"
     },
     {
       year: "2024",
@@ -52,7 +54,8 @@ export const portfolioData = {
       title: "Mathematical and Buongiorno Nanofluid Modelling to Predict the Thermal and Solutal Performance of Magneto-Bioconvective Casson Nanofluid Flowing in a Rotatory Disk",
       authors: "Sulyman O. Salawu, MD Shamshuddin, Md Rezwan Bin Mizan, Sajjadul Bari",
       reference: "DOI: 10.1088/1402-4896/ad8e1a",
-      status: "published"
+      status: "published",
+      url: "https://iopscience.iop.org/article/10.1088/1402-4896/ad8e1a/meta"
     },
     {
       year: "2021",
@@ -60,7 +63,8 @@ export const portfolioData = {
       title: "Computation of Ferromagnetic/Nonmagnetic Nanofluid Flow Over a Stretching Cylinder with Induction and Curvature Effects",
       authors: "Md Rezwan Bin Mizan, Mohammad Ferdows, MD Shamshuddin, O. Anwar Bég, Sulyman O. Salawu, Ali Kadir",
       reference: "DOI: 10.1002/htj.22122, 50(6), 5240–5266",
-      status: "published"
+      status: "published",
+      url: "https://onlinelibrary.wiley.com/doi/abs/10.1002/htj.22122?casa_token=KNMg93GQw3oAAAAA%3AmekYWYAAWtNRhrbNRS01N9nhTQUFGetJdSpSNKqT2DJU8LfGOUUipvp6e6XcJRSi6YFuMvk8vSXIJUQ"
     }
   ],
 

@@ -7,7 +7,7 @@ export function PhotoGallery() {
   const photos = {
     conferences: [
       { src: "/images/conference-1.jpg", title: "GSPP Talk Photo 1" },
-      { src: "/images/conference-2.jpg", title: "GSPP Talk Photo 2"" }
+      { src: "/images/conference-2.jpg", title: "GSPP Talk Photo 2" }
     ],
     posters: [
       { src: "/images/poster-1.jpg", title: "Research Poster Presentation" }

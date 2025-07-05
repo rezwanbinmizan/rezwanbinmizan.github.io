@@ -35,7 +35,7 @@ export function Teaching() {
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Md Rezwan Bin Mizan is passionate about mathematics education and committed to helping students 
-            develop strong analytical and problem-solving skills through innovative teaching methods.
+            develop strong analytical and problem-solving skills through engaging, student-centered teaching methods.
           </p>
         </div>
 

@@ -6,8 +6,8 @@ export function PhotoGallery() {
   // Simple photo data - just replace the image files to update
   const photos = {
     conferences: [
-      { src: "/images/conference-1.jpg", title: "GSPP Talk 1" },
-      { src: "/images/conference-2.jpg", title: "GSPP Talk 2" }
+      { src: "/images/conference-1.jpg", title: "GSPP Talk Photo 1" },
+      { src: "/images/conference-2.jpg", title: "GSPP Talk Photo 2"" }
     ],
     posters: [
       { src: "/images/poster-1.jpg", title: "Research Poster Presentation" }
@@ -16,7 +16,7 @@ export function PhotoGallery() {
       // Add research photos here when available
     ],
     profile: [
-      { src: "/images/profile-1.jpg", title: "Professional Photo" }
+      { src: "/images/profile-1.jpg", title: "Photo in DC" }
     ]
   };
 

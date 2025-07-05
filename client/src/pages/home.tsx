@@ -28,8 +28,8 @@ export default function Home() {
             <div>
               <h3 className="text-lg font-semibold mb-4">About Md Rezwan Bin Mizan</h3>
               <p className="text-gray-300 text-sm leading-relaxed">
-                Md Rezwan Bin Mizan is a dedicated PhD candidate in Mathematics at the University of Houston, 
-                specializing in advanced computational methods and mathematical modeling.
+                Md Rezwan Bin Mizan is a PhD candidate in Mathematics at the University of Houston, 
+                focused on advanced numerical methods and reduced-order modeling for complex physical systems.
               </p>
             </div>
             <div>

@@ -27,7 +27,7 @@ export function HeroSection() {
               {personal.title}
             </p>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              {personal.summary}
+              Welcome to the academic portfolio of {personal.name}. {personal.summary}
             </p>
             <div className="flex flex-wrap gap-4">
               <Button 

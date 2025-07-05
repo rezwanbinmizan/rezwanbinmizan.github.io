@@ -14,7 +14,7 @@ export function Research() {
             Research & Publications
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Exploring mathematical frontiers through rigorous research and scholarly publications
+            Md Rezwan Bin Mizan's mathematical research focuses on exploring computational frontiers through rigorous research and scholarly publications
           </p>
         </div>
 

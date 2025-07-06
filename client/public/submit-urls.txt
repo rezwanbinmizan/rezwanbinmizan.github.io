@@ -1,0 +1,14 @@
+# Submit these URLs to search engines manually:
+
+Google: https://www.google.com/webmasters/tools/submit-url
+Bing: https://www.bing.com/webmaster/ping.aspx
+DuckDuckGo: https://duckduckgo.com/newbang
+
+Main URL to submit:
+https://personal-showcase-rezwanbinmizan.replit.app/
+
+Key Pages:
+https://personal-showcase-rezwanbinmizan.replit.app/#research
+https://personal-showcase-rezwanbinmizan.replit.app/#education
+https://personal-showcase-rezwanbinmizan.replit.app/#teaching
+https://personal-showcase-rezwanbinmizan.replit.app/#contact

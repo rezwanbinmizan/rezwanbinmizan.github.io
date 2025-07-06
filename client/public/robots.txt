@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rest-express.replit.app/sitemap.xml
+Sitemap: https://personal-showcase-rezwanbinmizan.replit.app/sitemap.xml

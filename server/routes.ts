@@ -4,8 +4,8 @@ import { storage } from "./storage";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Google Search Console verification file
-  app.get('/google2Ov-o32R6zjoKrad8d57G-gHkUJwWOKCx00uQGO_FaA.html', (req, res) => {
-    res.type('text/html').send('google-site-verification: google2Ov-o32R6zjoKrad8d57G-gHkUJwWOKCx00uQGO_FaA.html');
+  app.get('/google8b2dc979040c293b.html', (req, res) => {
+    res.type('text/html').send('google-site-verification: google8b2dc979040c293b.html');
   });
 
   // put application routes here

@@ -56,9 +56,21 @@ export function Contact() {
                       <Mail className="text-white h-5 w-5" />
                     </div>
                     <div>
-                      <p className="text-sm text-gray-500">Email</p>
+                      <p className="text-sm text-gray-500">Academic Email</p>
                       <p className="text-academic-dark font-medium">
                         {personal.email}
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center">
+                    <div className="w-10 h-10 bg-academic-blue rounded-lg flex items-center justify-center mr-4">
+                      <Mail className="text-white h-5 w-5" />
+                    </div>
+                    <div>
+                      <p className="text-sm text-gray-500">Personal Email</p>
+                      <p className="text-academic-dark font-medium">
+                        {personal.emailPersonal}
                       </p>
                     </div>
                   </div>

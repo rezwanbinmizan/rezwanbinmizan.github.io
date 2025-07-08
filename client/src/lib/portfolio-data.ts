@@ -3,6 +3,7 @@ export const portfolioData = {
     name: "Md Rezwan Bin Mizan",
     title: "PhD Candidate in Mathematics",
     email: "mbinmiza@cougarnet.uh.edu",
+    emailPersonal: "rezwanbinmizan@gmail.com",
     linkedin: "https://linkedin.com/in/md-rezwan-bin-mizan",
     orcid: "https://orcid.org/0009-0000-3744-595X",
     googleScholar: "https://scholar.google.com/citations?user=-5tCF90AAAAJ&hl=en&authuser=1",

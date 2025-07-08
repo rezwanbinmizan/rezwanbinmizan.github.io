@@ -5,6 +5,7 @@ export const portfolioData = {
     email: "mbinmiza@cougarnet.uh.edu",
     linkedin: "https://linkedin.com/in/md-rezwan-bin-mizan",
     orcid: "https://orcid.org/0009-0000-3744-595X",
+    googleScholar: "https://scholar.google.com/citations?user=-5tCF90AAAAJ&hl=en&authuser=1",
     summary: "I am a PhD candidate in Mathematics at the University of Houston, where my research bridges numerical analysis, data-driven modeling, and fluid dynamics. I specialize in developing Reduced-Order Models (ROMs) for parametric partial differential equations, enabling faster, more efficient simulations of complex physical systems for diverse applications.Prior to my doctoral studies, I served as a lecturer at the American International University-Bangladesh (AIUB) and earned my BS and MS in Mathematics from the University of Dhaka. These experiences solidified my dedication to teaching and collaborative research. My work has been published in peer-reviewed journals. I also contribute to the mathematical community as the treasurer of our local American Mathematical Society (AMS) chapter. Beyond academia, I am an avid cricket enthusiast, a culinary explorer always eager to discover new global flavors, and a passionate admirer of history."
   },
 

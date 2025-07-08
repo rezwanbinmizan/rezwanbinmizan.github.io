@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import { Mail, Linkedin, ExternalLink } from "lucide-react";
+import { Mail, Linkedin, ExternalLink, GraduationCap } from "lucide-react";
 import { portfolioData } from "@/lib/portfolio-data";
 
 export function Contact() {
@@ -88,6 +88,16 @@ export function Contact() {
                 >
                   <ExternalLink className="mr-2 h-4 w-4" />
                   ORCID
+                </Button>
+              </div>
+              <div className="grid grid-cols-1 gap-4">
+                <Button 
+                  variant="outline"
+                  className="border-academic-blue text-academic-blue hover:bg-academic-blue hover:text-white transition-colors font-medium"
+                  onClick={() => window.open(personal.googleScholar, "_blank")}
+                >
+                  <GraduationCap className="mr-2 h-4 w-4" />
+                  Google Scholar
                 </Button>
               </div>
             </div>

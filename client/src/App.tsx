@@ -4,6 +4,13 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/home";
+import ResearchPage from "@/pages/research";
+import EducationPage from "@/pages/education";
+import TeachingPage from "@/pages/teaching";
+import ExperiencePage from "@/pages/experience";
+import GalleryPage from "@/pages/gallery";
+import BlogPage from "@/pages/blog";
+import ContactPage from "@/pages/contact";
 import NotFound from "@/pages/not-found";
 import { useEffect } from "react";
 import { initGA } from "./lib/analytics";
@@ -16,6 +23,13 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/research" component={ResearchPage} />
+      <Route path="/education" component={EducationPage} />
+      <Route path="/teaching" component={TeachingPage} />
+      <Route path="/experience" component={ExperiencePage} />
+      <Route path="/gallery" component={GalleryPage} />
+      <Route path="/blog" component={BlogPage} />
+      <Route path="/contact" component={ContactPage} />
       <Route component={NotFound} />
     </Switch>
   );

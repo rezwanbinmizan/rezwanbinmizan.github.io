@@ -5,28 +5,50 @@ import { Menu } from "lucide-react";
 import { Link, useLocation } from "wouter";
 
 const navigationItems = [
-  { href: "/", label: "Home" },
-  { href: "/research", label: "Research" },
-  { href: "/education", label: "Education" },
-  { href: "/teaching", label: "Teaching" },
-  { href: "/experience", label: "Experience" },
-  { href: "/gallery", label: "Gallery" },
-  { href: "/blog", label: "Blog" },
-  { href: "/contact", label: "Contact" }
+  { href: "#home", label: "Home" },
+  { href: "#research", label: "Research" },
+  { href: "#education", label: "Education" },
+  { href: "#teaching", label: "Teaching" },
+  { href: "#experience", label: "Experience" },
+  { href: "#gallery", label: "Gallery" },
+  { href: "#blog", label: "Blog" },
+  { href: "#contact", label: "Contact" }
 ];
 
 export function Navigation() {
-  const [location] = useLocation();
+  const [activeSection, setActiveSection] = useState("home");
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
+
+      // Update active section based on scroll position
+      const sections = navigationItems.map(item => item.href.substring(1));
+      const currentSection = sections.find(section => {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          return rect.top <= 100 && rect.bottom >= 100;
+        }
+        return false;
+      });
+      
+      if (currentSection) {
+        setActiveSection(currentSection);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const scrollToSection = (href: string) => {
+    const target = document.querySelector(href);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -41,17 +63,17 @@ export function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             {navigationItems.map((item) => (
-              <Link
+              <button
                 key={item.href}
-                href={item.href}
+                onClick={() => scrollToSection(item.href)}
                 className={`text-sm font-medium transition-colors ${
-                  location === item.href
+                  activeSection === item.href.substring(1)
                     ? "text-academic-blue font-semibold"
                     : "text-gray-700 hover:text-academic-blue"
                 }`}
               >
                 {item.label}
-              </Link>
+              </button>
             ))}
           </div>
 
@@ -65,13 +87,13 @@ export function Navigation() {
             <SheetContent>
               <div className="flex flex-col space-y-4 mt-8">
                 {navigationItems.map((item) => (
-                  <Link
+                  <button
                     key={item.href}
-                    href={item.href}
+                    onClick={() => scrollToSection(item.href)}
                     className="text-left text-sm font-medium text-gray-700 hover:text-academic-blue transition-colors"
                   >
                     {item.label}
-                  </Link>
+                  </button>
                 ))}
               </div>
             </SheetContent>

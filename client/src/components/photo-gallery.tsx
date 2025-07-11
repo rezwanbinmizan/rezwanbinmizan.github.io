@@ -5,7 +5,8 @@ export function PhotoGallery() {
   const allPhotos = [
     { src: "/images/conference-1.jpg", title: "GSPP Talk Photo 1" },
     { src: "/images/conference-2.jpg", title: "GSPP Talk Photo 2" },
-    { src: "/images/poster-1.jpg", title: "Research Poster Presentation" }
+    { src: "/images/poster-1.jpg", title: "Research Poster Presentation" },
+    { src: "/images/summer-school.jpg", title: "Summer School at Texas A&M" }
   ];
 
   const PhotoCard = ({ photo }: { photo: { src: string; title: string } }) => (

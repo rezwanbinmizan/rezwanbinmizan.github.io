@@ -10,7 +10,7 @@ export function PhotoGallery() {
   ];
 
   const PhotoCard = ({ photo }: { photo: { src: string; title: string } }) => (
-    <Card className="bg-white shadow-sm hover:shadow-md transition-all duration-300">
+    <Card className="bg-white shadow-sm">
       <CardContent className="p-0">
         <div className="relative overflow-hidden rounded-lg bg-gray-200">
           <img 

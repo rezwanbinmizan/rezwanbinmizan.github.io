@@ -9,25 +9,14 @@ export function PhotoGallery() {
     { src: "/images/summer-school.jpg", title: "During Summer School at Texas A&M" }
   ];
 
-  const PhotoCard = ({ photo, index }: { photo: { src: string; title: string }; index: number }) => {
-    // Create varying heights for floating effect
-    const heights = ['h-72', 'h-80', 'h-64', 'h-96'];
-    const height = heights[index % heights.length];
-    
-    // Create floating animation - pairs move together (0&1, 2&3, etc.)
-    const animationDelay = Math.floor(index / 2) * 1; // Pairs share same delay
-    const floatingDirection = index % 2 === 0 ? 'animate-float-up' : 'animate-float-down';
-    
-    return (
-      <div 
-        className={`bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 ${height} flex flex-col ${floatingDirection}`}
-        style={{ animationDelay: `${animationDelay}s` }}
-      >
-        <div className="relative overflow-hidden rounded-t-xl flex-1 bg-gray-200">
+  const PhotoCard = ({ photo }: { photo: { src: string; title: string } }) => (
+    <Card className="bg-white shadow-sm hover:shadow-md transition-all duration-300">
+      <CardContent className="p-0">
+        <div className="relative overflow-hidden rounded-lg bg-gray-200">
           <img 
             src={photo.src} 
             alt={photo.title}
-            className="w-full h-full object-cover"
+            className="w-full h-64 object-cover"
             onError={(e) => {
               console.error('Failed to load image:', photo.src);
             }}
@@ -35,14 +24,13 @@ export function PhotoGallery() {
               console.log('Successfully loaded image:', photo.src);
             }}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
+          <div className="p-4 bg-white">
+            <h4 className="font-medium text-gray-800">{photo.title}</h4>
+          </div>
         </div>
-        <div className="p-4 bg-white rounded-b-xl">
-          <h4 className="font-medium text-gray-800 text-sm leading-snug">{photo.title}</h4>
-        </div>
-      </div>
-    );
-  };
+      </CardContent>
+    </Card>
+  );
 
   return (
     <section id="gallery" className="py-16 bg-white">
@@ -51,9 +39,9 @@ export function PhotoGallery() {
           Photo Gallery
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {allPhotos.map((photo, index) => (
-            <PhotoCard key={index} photo={photo} index={index} />
+            <PhotoCard key={index} photo={photo} />
           ))}
         </div>
       </div>

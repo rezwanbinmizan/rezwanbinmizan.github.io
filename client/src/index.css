@@ -73,7 +73,8 @@
   .font-inter {
     font-family: 'Inter', sans-serif;
   }
-  
+
+  /* Custom academic theme colors */
   .text-academic-blue {
     color: var(--academic-blue);
   }
@@ -125,6 +126,34 @@
   .hover\:text-academic-blue:hover {
     color: var(--academic-blue);
   }
+
+  /* Floating animations for photo pairs */
+  .animate-float-up {
+    animation: float-up 3s ease-in-out infinite;
+  }
+
+  .animate-float-down {
+    animation: float-down 3s ease-in-out infinite;
+  }
+}
+
+/* Floating keyframe animations */
+@keyframes float-up {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes float-down {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
 }
 
 /* Custom Animations */
@@ -164,30 +193,4 @@
 
 .animation-delay-400 {
   animation-delay: 400ms;
-}
-
-.animation-delay-600 {
-  animation-delay: 600ms;
-}
-
-.animation-delay-800 {
-  animation-delay: 800ms;
-}
-
-/* Background patterns */
-.bg-grid-pattern {
-  background-image: radial-gradient(circle at 1px 1px, rgba(79, 172, 254, 0.15) 1px, transparent 0);
-  background-size: 20px 20px;
-}
-
-/* Enhanced shadows */
-.shadow-3xl {
-  box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.25);
-}
-
-/* Gradient text effects */
-.text-gradient {
-  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }

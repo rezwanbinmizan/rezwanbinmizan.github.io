@@ -14,8 +14,15 @@ export function PhotoGallery() {
     const heights = ['h-72', 'h-80', 'h-64', 'h-96'];
     const height = heights[index % heights.length];
     
+    // Create floating animation - pairs move together (0&1, 2&3, etc.)
+    const animationDelay = Math.floor(index / 2) * 1; // Pairs share same delay
+    const floatingDirection = index % 2 === 0 ? 'animate-float-up' : 'animate-float-down';
+    
     return (
-      <div className={`bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 ${height} flex flex-col`}>
+      <div 
+        className={`bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 ${height} flex flex-col ${floatingDirection}`}
+        style={{ animationDelay: `${animationDelay}s` }}
+      >
         <div className="relative overflow-hidden rounded-t-xl flex-1 bg-gray-200">
           <img 
             src={photo.src} 

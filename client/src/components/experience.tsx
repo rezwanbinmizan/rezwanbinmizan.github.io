@@ -6,7 +6,7 @@ export function Experience() {
   const { experience, presentations } = portfolioData;
 
   return (
-    <section id="experience" className="py-16 bg-gradient-to-l from-yellow-50 to-amber-50">
+    <section id="experience" className="py-16 bg-gradient-to-l from-blue-50 to-sky-50">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-academic-dark mb-12 text-center">
           Experience

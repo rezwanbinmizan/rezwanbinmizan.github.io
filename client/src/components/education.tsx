@@ -5,7 +5,7 @@ export function Education() {
   const { education } = portfolioData;
 
   return (
-    <section id="education" className="py-16 bg-gradient-to-l from-teal-50 to-cyan-50">
+    <section id="education" className="py-16 bg-gradient-to-l from-gray-50 to-slate-50">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-academic-dark mb-12 text-center">
           Education

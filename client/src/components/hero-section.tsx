@@ -18,8 +18,8 @@ export function HeroSection() {
   return (
     <section id="home" className="pt-24 pb-16 bg-gradient-to-br from-academic-light to-white">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
-          <div className="lg:col-span-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="lg:col-span-1">
             <h1 className="text-4xl lg:text-5xl font-bold text-academic-dark mb-6 leading-tight">
               {personal.name}
             </h1>
@@ -68,7 +68,7 @@ export function HeroSection() {
               <img
                 src="/images/profile-1.jpg"
                 alt={personal.name}
-                className="w-full h-full object-cover aspect-square"
+                className="w-full h-96 lg:h-[500px] object-cover"
               />
             </div>
           </div>

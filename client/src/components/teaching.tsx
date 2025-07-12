@@ -27,7 +27,7 @@ export function Teaching() {
   };
 
   return (
-    <section id="teaching" className="py-16 bg-gray-50">
+    <section id="teaching" className="py-16 bg-gradient-to-r from-pink-50 to-purple-50">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-academic-dark mb-4">

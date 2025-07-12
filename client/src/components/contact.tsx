@@ -36,7 +36,7 @@ export function Contact() {
 
 
   return (
-    <section id="contact" className="py-16 bg-academic-light">
+    <section id="contact" className="py-16 bg-gradient-to-br from-emerald-50 to-green-50">
       <div className="max-w-4xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-academic-dark mb-12 text-center">
           Contact Information

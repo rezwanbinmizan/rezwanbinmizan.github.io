@@ -33,7 +33,7 @@ export function PhotoGallery() {
   );
 
   return (
-    <section id="gallery" className="py-16 bg-white">
+    <section id="gallery" className="py-16 bg-gradient-to-r from-indigo-50 to-blue-50">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-academic-dark mb-12 text-center">
           Photo Gallery

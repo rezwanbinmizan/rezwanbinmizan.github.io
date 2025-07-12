@@ -7,7 +7,7 @@ import { portfolioData } from "@/lib/portfolio-data";
 
 export function Research() {
   return (
-    <section id="research" className="py-16 bg-white">
+    <section id="research" className="py-16 bg-gradient-to-r from-orange-50 to-red-50">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-academic-dark mb-4">

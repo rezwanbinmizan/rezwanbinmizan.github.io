@@ -102,6 +102,12 @@ export const portfolioData = {
 
   experience: [
     {
+      title: "Instructor of Record",
+      organization: "Department of Mathematics, University of Houston",
+      period: "Fall 2025",
+      description: "MATH 2131 (Linear Algebra Labs with MATLAB) - Teaching linear algebra concepts through hands-on computational laboratory sessions using MATLAB."
+    },
+    {
       title: "Research Assistant",
       organization: "Department of Mathematics, University of Houston",
       period: "June 2024 – Present",

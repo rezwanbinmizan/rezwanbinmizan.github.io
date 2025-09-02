@@ -6,6 +6,17 @@ export function Teaching() {
   const teachingData = {
     positions: [
       {
+        title: "Instructor of Record",
+        institution: "University of Houston",
+        department: "Department of Mathematics",
+        period: "Fall 2025",
+        courses: ["MATH 2131 - Linear Algebra Labs with MATLAB"],
+        responsibilities: [
+          "Teaching linear algebra concepts through hands-on computational laboratory sessions using MATLAB",
+          "Developing curriculum and assessments for undergraduate linear algebra laboratory course"
+        ]
+      },
+      {
         title: "Graduate Teaching Assistant",
         institution: "University of Houston",
         department: "Department of Mathematics",

@@ -6,7 +6,8 @@ export function PhotoGallery() {
     { src: "/images/conference-1.jpg", title: "GSPP Talk Photo 1" },
     { src: "/images/conference-2.jpg", title: "GSPP Talk Photo 2" },
     { src: "/images/poster-1.jpg", title: "Research Poster Presentation" },
-    { src: "/images/summer-school.jpg", title: "During Summer School at Texas A&M" }
+    { src: "/images/summer-school.jpg", title: "During Summer School at Texas A&M" },
+    { src: "/images/scientific-computing-seminar.jpg", title: "Scientific computing Seminar at UH" }
   ];
 
   const PhotoCard = ({ photo }: { photo: { src: string; title: string } }) => (

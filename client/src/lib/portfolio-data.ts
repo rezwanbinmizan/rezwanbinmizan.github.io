@@ -123,25 +123,11 @@ export const portfolioData = {
 
   presentations: [
     {
-      title: "Mathematical Opportunities in Digital Twins",
-      venue: "George Mason University",
-      date: "December 11-13, 2023",
-      type: "Poster",
-      presentation: "Reduced Order Modeling of Kuramoto-Sivashinsky Equation using Proper Orthogonal Decomposition"
-    },
-    {
-      title: "SIAM Texas-Louisiana Section",
-      venue: "Baylor University",
-      date: "October 11-13, 2024",
-      type: "Poster",
-      presentation: "POD–ROMs for the Generalized Kuramoto-Sivashinsky Equation (gKSE)"
-    },
-    {
-      title: "Graduate Student Paper Presentation",
-      venue: "University of Houston",
-      date: "October 11-13, 2024",
+      title: "Scientific Computing Seminar",
+      venue: "University of Houston Department of Mathematics",
+      date: "September 18, 2025",
       type: "Talk",
-      presentation: "POD–ROMs for the Generalized Kuramoto-Sivashinsky Equation (gKSE)"
+      presentation: "Tensorial Reduced Order Modeling of Viscoplastic Shallow-Water Dam-Break Flows. Research on tensorial approaches and reduced order modeling for accelerating computational simulations of complex fluid dynamics in dam-break scenarios."
     },
     {
       title: "TAMIDS SciML Summer School",
@@ -151,11 +137,25 @@ export const portfolioData = {
       presentation: "Scientific Machine Learning intensive training program"
     },
     {
-      title: "Scientific Computing Seminar",
-      venue: "University of Houston Department of Mathematics",
-      date: "September 18, 2025",
+      title: "Graduate Student Paper Presentation",
+      venue: "University of Houston",
+      date: "October 11-13, 2024",
       type: "Talk",
-      presentation: "Tensorial Reduced Order Modeling of Viscoplastic Shallow-Water Dam-Break Flows. Research on tensorial approaches and reduced order modeling for accelerating computational simulations of complex fluid dynamics in dam-break scenarios."
+      presentation: "POD–ROMs for the Generalized Kuramoto-Sivashinsky Equation (gKSE)"
+    },
+    {
+      title: "SIAM Texas-Louisiana Section",
+      venue: "Baylor University",
+      date: "October 11-13, 2024",
+      type: "Poster",
+      presentation: "POD–ROMs for the Generalized Kuramoto-Sivashinsky Equation (gKSE)"
+    },
+    {
+      title: "Mathematical Opportunities in Digital Twins",
+      venue: "George Mason University",
+      date: "December 11-13, 2023",
+      type: "Poster",
+      presentation: "Reduced Order Modeling of Kuramoto-Sivashinsky Equation using Proper Orthogonal Decomposition"
     }
   ],
 

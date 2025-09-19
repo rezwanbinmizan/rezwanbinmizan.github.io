@@ -205,11 +205,11 @@ export const portfolioData = {
 
   documents: {
     cv: {
-      filename: "Rezwan_CV_1751649977158.pdf",
+      filename: "Rezwan_CV_2025.pdf",
       title: "Curriculum Vitae",
-      description: "Complete academic CV including research experience, publications, education background, teaching experience, and professional achievements. Updated with latest research work in Reduced Order Models and Computational Fluid Dynamics.",
-      lastUpdated: "January 2025",
-      downloadPath: "/attached_assets/Rezwan_CV_1751649977158.pdf"
+      description: "Complete academic CV including research experience, publications, education background, teaching experience, professional achievements, leadership roles, and latest presentations. Updated with recent Scientific Computing Seminar presentation and current research work in Reduced Order Models and Computational Fluid Dynamics.",
+      lastUpdated: "September 2025",
+      downloadPath: "/attached_assets/Rezwan_CV_2025.pdf"
     }
   }
 };

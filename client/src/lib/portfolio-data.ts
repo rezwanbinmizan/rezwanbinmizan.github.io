@@ -123,13 +123,6 @@ export const portfolioData = {
 
   presentations: [
     {
-      title: "Scientific Computing Seminar",
-      venue: "University of Houston Department of Mathematics",
-      date: "September 18, 2025",
-      type: "Talk",
-      presentation: "Tensorial Reduced Order Modeling of Viscoplastic Shallow-Water Dam-Break Flows. Research on tensorial approaches and reduced order modeling for accelerating computational simulations of complex fluid dynamics in dam-break scenarios."
-    },
-    {
       title: "Mathematical Opportunities in Digital Twins",
       venue: "George Mason University",
       date: "December 11-13, 2023",
@@ -156,6 +149,13 @@ export const portfolioData = {
       date: "May 12–16, 2025",
       type: "Training",
       presentation: "Scientific Machine Learning intensive training program"
+    },
+    {
+      title: "Scientific Computing Seminar",
+      venue: "University of Houston Department of Mathematics",
+      date: "September 18, 2025",
+      type: "Talk",
+      presentation: "Tensorial Reduced Order Modeling of Viscoplastic Shallow-Water Dam-Break Flows. Research on tensorial approaches and reduced order modeling for accelerating computational simulations of complex fluid dynamics in dam-break scenarios."
     }
   ],
 

@@ -7,7 +7,7 @@ export function HeroSection() {
 
   const handleDownloadCV = () => {
     // Download the actual uploaded CV file
-    window.open("/attached_assets/Rezwan_CV_1751649977158.pdf", "_blank");
+    window.open("/attached_assets/Rezwan_CV_2025.pdf", "_blank");
   };
 
   const handleContactMe = () => {

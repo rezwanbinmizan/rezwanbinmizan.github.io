@@ -114,6 +114,12 @@ export const portfolioData = {
       description: "Provided tutoring assistance to undergraduate students in Calculus I-III, Discrete Mathematics, Linear Algebra, and Probability."
     },
     {
+      title: "TAMIDS SciML Summer School Participant",
+      organization: "Texas A&M University",
+      period: "May 12–16, 2025",
+      description: "Scientific Machine Learning intensive training program organized by Texas A&M Institute of Data Science."
+    },
+    {
       title: "Lecturer",
       organization: "American International University–Bangladesh (AIUB)",
       period: "January 2018 – July 2021",
@@ -128,13 +134,6 @@ export const portfolioData = {
       date: "September 18, 2025",
       type: "Talk",
       presentation: "Tensorial Reduced Order Modeling of Viscoplastic Shallow-Water Dam-Break Flows. Research on tensorial approaches and reduced order modeling for accelerating computational simulations of complex fluid dynamics in dam-break scenarios."
-    },
-    {
-      title: "TAMIDS SciML Summer School",
-      venue: "Texas A&M University",
-      date: "May 12–16, 2025",
-      type: "Training",
-      presentation: "Scientific Machine Learning intensive training program"
     },
     {
       title: "Graduate Student Paper Presentation",

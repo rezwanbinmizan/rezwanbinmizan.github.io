@@ -8,7 +8,9 @@ export function Experience() {
 
   // Group presentations by year
   const groupedPresentations = presentations.reduce((acc, presentation) => {
-    const year = new Date(presentation.date).getFullYear().toString();
+    // Extract year from date string (handles formats like "May 12–16, 2025" or "September 18, 2025")
+    const yearMatch = presentation.date.match(/\b(20\d{2})\b/);
+    const year = yearMatch ? yearMatch[1] : "Unknown";
     if (!acc[year]) acc[year] = [];
     acc[year].push(presentation);
     return acc;

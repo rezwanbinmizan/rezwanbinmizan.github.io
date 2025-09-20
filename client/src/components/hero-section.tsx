@@ -6,8 +6,14 @@ export function HeroSection() {
   const { personal } = portfolioData;
 
   const handleDownloadCV = () => {
-    // Download the actual uploaded CV file
-    window.open("/attached_assets/Rezwan_CV_2025.pdf", "_blank");
+    // Create a proper download link
+    const link = document.createElement('a');
+    link.href = '/attached_assets/Rezwan_CV_2025.pdf';
+    link.download = 'Rezwan_CV_2025.pdf';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const handleContactMe = () => {

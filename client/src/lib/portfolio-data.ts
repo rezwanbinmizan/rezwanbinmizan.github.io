@@ -129,6 +129,13 @@ export const portfolioData = {
 
   presentations: [
     {
+      title: "SIAM TX-LA Conference",
+      venue: "Minisymposium, UT Austin",
+      date: "September 27, 2025",
+      type: "Talk",
+      presentation: "A Parametric Tensor ROM for the Shallow Water Dam-Break Problem"
+    },
+    {
       title: "Scientific Computing Seminar",
       venue: "University of Houston Department of Mathematics",
       date: "September 18, 2025",

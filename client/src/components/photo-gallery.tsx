@@ -5,7 +5,7 @@ export function PhotoGallery() {
   const allPhotos = [
     { src: "/images/conference-1.jpg", title: "GSPP Talk Photo 1" },
     { src: "/images/conference-2.jpg", title: "GSPP Talk Photo 2" },
-    { src: "/images/poster-1.jpg", title: "Research Poster Presentation" },
+    { src: "/images/poster-1.jpg", title: "Research Poster Presentation at GMU" },
     { src: "/images/summer-school.jpg", title: "During Summer School at Texas A&M" },
     { src: "/images/scientific-computing-seminar.jpg", title: "Scientific computing Seminar at UH" },
     { src: "/images/siam-txla-2025.jpg", title: "SIAM TXLA 2025 UT Austin" }

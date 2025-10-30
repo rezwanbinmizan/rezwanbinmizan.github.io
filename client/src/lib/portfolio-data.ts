@@ -12,23 +12,28 @@ export const portfolioData = {
 
   researchInterests: [
     {
-      title: "Reduced Order Models",
-      description: "Advanced computational techniques for efficient simulation and modeling",
+      title: "Reduced Order Modeling (ROM) and Tensorial ROM",
+      description: "Developing advanced ROM techniques for nonlinear PDEs",
       icon: "cube"
     },
     {
-      title: "Computational Fluid Dynamics",
-      description: "Numerical analysis and simulation of fluid flow phenomena",
-      icon: "wind"
-    },
-    {
-      title: "Deep Learning & Time Series",
-      description: "Machine learning applications in mathematical modeling and analysis",
+      title: "Data-driven and Machine Learning-based ROMs",
+      description: "Deep learning ROMs (DL-ROM) and hybrid ROM approaches",
       icon: "brain"
     },
     {
-      title: "Numerical Optimization",
-      description: "Advanced optimization techniques for mathematical problem solving",
+      title: "Computational Fluid Dynamics (CFD)",
+      description: "Multiphase flow modeling and numerical simulation",
+      icon: "wind"
+    },
+    {
+      title: "Non-Newtonian and Viscoplastic Fluid Dynamics",
+      description: "Herschel-Bulkley flows and complex rheological modeling",
+      icon: "droplet"
+    },
+    {
+      title: "Large-scale Parametric Simulations",
+      description: "Scientific computing for complex parametric systems",
       icon: "chart-line"
     }
   ],

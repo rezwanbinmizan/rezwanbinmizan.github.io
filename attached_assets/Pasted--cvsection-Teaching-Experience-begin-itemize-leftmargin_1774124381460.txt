@@ -1,0 +1,45 @@
+\cvsection{Teaching Experience}
+\begin{itemize}[leftmargin=0in, itemsep=4pt]
+
+    \item \cvitemalign{Instructor of Record}{University of Houston}{Aug 2025 -- Present}
+    \begin{itemize}[leftmargin=1.5em, itemsep=2pt]
+        \item Design and deliver a computation-driven linear algebra course integrating theoretical concepts with MATLAB-based applications.
+        \item Develop assignments, exams, and coding projects emphasizing conceptual understanding and problem solving.
+        \item Mentor students through office hours and support diverse learning needs.
+        \item[] \vspace{2pt}
+        \begin{tabularx}{\linewidth}{@{}lX@{}}
+            \textit{Fall 2025:}   & MATH 2131 -- Linear Algebra with MATLAB \\
+            \textit{Spring 2026:} & MATH 2131 -- Linear Algebra with MATLAB \\
+        \end{tabularx}
+    \end{itemize}
+
+    \needspace{14\baselineskip}
+    \item \cvitemalign{Graduate Teaching Assistant}{University of Houston}{Aug 2021 -- May 2024}
+    \begin{itemize}[leftmargin=1.5em, itemsep=2pt]
+        \item Led Calculus I--III lab sessions and supported instruction across multiple undergraduate courses.
+        \item Provided tutoring at CASA and assisted students with diverse mathematical backgrounds.
+        \item Evaluated coursework in calculus, discrete mathematics, probability, and linear algebra.
+        \item[] \vspace{2pt}
+        \begin{tabularx}{\linewidth}{@{}lX@{}}
+            \textit{Fall 2021:}   & MATH 2413 -- Calculus I \\
+            \textit{Spring 2022:} & MATH 2413 -- Calculus I; \quad MATH 3336 -- Discrete Mathematics \\
+            \textit{Summer 2022:} & MATH 3338 -- Probability \textit{(grader/tutor)} \\
+            \textit{Fall 2022:}   & MATH 3338 -- Probability \textit{(grader/tutor)} \\
+            \textit{Spring 2023:} & MATH 2414 -- Calculus II \\
+            \textit{Summer 2023:} & MATH 4380 -- Survey of Mathematics \textit{(grader/tutor)} \\
+            \textit{Fall 2023:}   & MATH 4380 -- Survey of Mathematics \textit{(grader/tutor)} \\
+            \textit{Spring 2024:} & MATH 2305 -- Discrete Mathematics \\
+            \textit{Fall 2024:}   & MATH 2318 -- Linear Algebra \\
+            \textit{Summer 2025:} & MATH 2415 -- Calculus III \\
+        \end{tabularx}
+    \end{itemize}
+
+    \needspace{6\baselineskip}
+    \item \cvitemalign{Lecturer}{American International University--Bangladesh (AIUB)}{Jan 2018 -- Jul 2021}
+    \begin{itemize}[leftmargin=1.5em, itemsep=2pt]
+        \item Taught undergraduate courses including Calculus, Differential Equations, Numerical Methods, and Complex Variables.
+        \item Designed course materials and assessments aligned with learning objectives.
+        \item Transitioned courses to online delivery during COVID-19 and mentored students on academic progress.
+    \end{itemize}
+
+\end{itemize}

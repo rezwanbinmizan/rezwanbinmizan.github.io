@@ -35,13 +35,13 @@ export const portfolioData = {
 
   publications: [
     {
-      year: "2025",
-      type: "arXiv Preprint",
+      year: "2026",
+      type: "Computers & Fluids, Elsevier",
       title: "A parametric tensor ROM for the shallow water dam break problem",
       authors: "Md Rezwan Bin Mizan, Maxim Olshanskii, and Ilya Timofeyev",
-      reference: "arXiv preprint, arXiv:2506.20007, 2025",
-      status: "preprint",
-      url: "https://arxiv.org/abs/2506.20007"
+      reference: "Computers & Fluids, Volume 309, 107005, April 2026. DOI: 10.1016/j.compfluid.2026.107005",
+      status: "published",
+      url: "https://www.sciencedirect.com/science/article/abs/pii/S0045793026000472"
     },
     {
       year: "2025",

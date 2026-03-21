@@ -47,11 +47,7 @@ export function Teaching() {
       institution: "American International University–Bangladesh (AIUB)",
       department: "Department of Mathematics",
       period: "Jan 2018 – Jul 2021",
-      responsibilities: [
-        "Taught undergraduate courses including Calculus, Differential Equations, Numerical Methods, and Complex Variables.",
-        "Designed course materials and assessments aligned with learning objectives.",
-        "Transitioned courses to online delivery during COVID-19 and mentored students on academic progress."
-      ]
+      courses: ["Differential Calculus", "Integral Calculus", "Ordinary Differential Equations", "Complex Variables", "Numerical Methods", "Linear Algebra"]
     }
   ];
 
@@ -87,14 +83,16 @@ export function Teaching() {
                 </div>
               </CardHeader>
               <CardContent className="space-y-4">
-                <ul className="space-y-2">
-                  {position.responsibilities.map((resp, idx) => (
-                    <li key={idx} className="flex items-start text-gray-700">
-                      <span className="w-2 h-2 bg-academic-blue rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                      {resp}
-                    </li>
-                  ))}
-                </ul>
+                {position.responsibilities && (
+                  <ul className="space-y-2">
+                    {position.responsibilities.map((resp, idx) => (
+                      <li key={idx} className="flex items-start text-gray-700">
+                        <span className="w-2 h-2 bg-academic-blue rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                        {resp}
+                      </li>
+                    ))}
+                  </ul>
+                )}
 
                 {position.semesterCourses && (
                   <div className="mt-3">
@@ -110,6 +108,19 @@ export function Teaching() {
                           ))}
                         </tbody>
                       </table>
+                    </div>
+                  </div>
+                )}
+
+                {position.courses && (
+                  <div>
+                    <p className="text-sm font-medium text-gray-700 mb-2">Courses Taught:</p>
+                    <div className="flex flex-wrap gap-2">
+                      {position.courses.map((course, idx) => (
+                        <Badge key={idx} variant="outline" className="text-xs">
+                          {course}
+                        </Badge>
+                      ))}
                     </div>
                   </div>
                 )}

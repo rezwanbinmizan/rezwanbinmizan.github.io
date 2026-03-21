@@ -44,6 +44,15 @@ export const portfolioData = {
       url: "https://www.sciencedirect.com/science/article/abs/pii/S0045793026000472"
     },
     {
+      year: "2026",
+      type: "arXiv Preprint",
+      title: "Tensorial Reduced-Order Models for Parametric Coupled Reaction-Diffusion Systems: Application to Brain Tumor Growth Modeling",
+      authors: "Asikul Islam, Md Rezwan Bin Mizan, and Andreas Mang",
+      reference: "arXiv preprint, arXiv:2603.14101, 2026",
+      status: "preprint",
+      url: "https://arxiv.org/abs/2603.14101"
+    },
+    {
       year: "2025",
       type: "arXiv Preprint", 
       title: "Parametric Reduced Order Models for the Generalized Kuramoto–Sivashinsky Equations",

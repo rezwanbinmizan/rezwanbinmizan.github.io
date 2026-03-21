@@ -37,11 +37,7 @@ export function Education() {
                       <p className="text-gray-600 mb-4">
                         {edu.status}
                       </p>
-                      {edu.gpa && (
-                        <p className="text-gray-600 mb-4">
-                          GPA: {edu.gpa}
-                        </p>
-                      )}
+
                       <div className="text-sm text-gray-600">
                         {edu.advisor && (
                           <p><strong>Advisor:</strong> {edu.advisor}</p>

@@ -88,22 +88,19 @@ export const portfolioData = {
       period: "2021 - 2026",
       status: "In progress - Expected Graduation: Summer 2026",
       advisor: "Professor Maxim Olshanskii",
-      coAdvisor: "Professor Ilya Timofeyev",
-      gpa: null
+      coAdvisor: "Professor Ilya Timofeyev"
     },
     {
       degree: "MS in Applied Mathematics",
       institution: "University of Houston, Texas, USA",
       period: "Dec 2025",
-      status: "Completed",
-      gpa: null
+      status: "Completed"
     },
     {
       degree: "MS in Applied Mathematics",
       institution: "University of Dhaka, Bangladesh",
       period: "2016 - 2017",
       status: "Completed",
-      gpa: "3.90/4.00",
       thesis: "Spectral Relaxation Approach on Convective Heat Transfer of Magnetic and Non-Magnetic Particles over a Stretching Cylinder with Induced Magnetic Enhancement"
     },
     {
@@ -111,7 +108,6 @@ export const portfolioData = {
       institution: "University of Dhaka, Bangladesh", 
       period: "2010 - 2015",
       status: "Completed",
-      gpa: "3.70/4.00",
       project: "A Study of Differential Equations in Population Biology"
     }
   ],

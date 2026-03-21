@@ -93,6 +93,13 @@ export const portfolioData = {
     },
     {
       degree: "MS in Applied Mathematics",
+      institution: "University of Houston, Texas, USA",
+      period: "Dec 2025",
+      status: "Completed",
+      gpa: null
+    },
+    {
+      degree: "MS in Applied Mathematics",
       institution: "University of Dhaka, Bangladesh",
       period: "2016 - 2017",
       status: "Completed",

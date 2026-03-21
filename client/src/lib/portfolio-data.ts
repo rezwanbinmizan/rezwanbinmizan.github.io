@@ -126,6 +126,12 @@ export const portfolioData = {
       description: "Provided tutoring assistance to undergraduate students in Calculus I-III, Discrete Mathematics, Linear Algebra, and Probability."
     },
     {
+      title: "CBMS Conference Participant",
+      organization: "University of Houston",
+      period: "December 8–12, 2025",
+      description: "Research at the Interface of Applied Mathematics and Machine Learning — NSF-CBMS Regional Research Conference."
+    },
+    {
       title: "TAMIDS SciML Summer School Participant",
       organization: "Texas A&M University",
       period: "May 12–16, 2025",

@@ -8,8 +8,8 @@ export function HeroSection() {
   const handleDownloadCV = () => {
     // Create a proper download link
     const link = document.createElement('a');
-    link.href = '/attached_assets/Rezwan_CV_2025.pdf';
-    link.download = 'Rezwan_CV_2025.pdf';
+    link.href = '/attached_assets/CV_MD_Rezwan_Bin_Mizan_1776051981771.pdf';
+    link.download = 'CV_MD_Rezwan_Bin_Mizan.pdf';
     link.target = '_blank';
     document.body.appendChild(link);
     link.click();

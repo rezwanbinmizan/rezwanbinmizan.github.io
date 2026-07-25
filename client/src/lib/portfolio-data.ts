@@ -46,6 +46,15 @@ export const portfolioData = {
     {
       year: "2026",
       type: "arXiv Preprint",
+      title: "Reduced-Order Modeling of Parameterized Visco-Plastic Shallow Flows",
+      authors: "Md Rezwan Bin Mizan, Maxim Olshanskii, and Ilya Timofeyev",
+      reference: "Under review at International Journal for Numerical Methods in Fluids, 2026. arXiv:2605.06526",
+      status: "preprint",
+      url: "https://arxiv.org/abs/2605.06526"
+    },
+    {
+      year: "2026",
+      type: "arXiv Preprint",
       title: "Tensorial Reduced-Order Models for Parametric Coupled Reaction-Diffusion Systems: Application to Brain Tumor Growth Modeling",
       authors: "Asikul Islam, Md Rezwan Bin Mizan, and Andreas Mang",
       reference: "arXiv preprint, arXiv:2603.14101, 2026",

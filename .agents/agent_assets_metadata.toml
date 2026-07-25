@@ -1,0 +1,26 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "qQT-VLskQj47ay3tvE57R"
+uri = "file://attached_assets/generated_videos/intro-title.mp4"
+type = "video"
+title = "1 · Title Card"
+
+[[outputs]]
+id = "EBKf6ZW3kH3vNJyiA4eeY"
+uri = "file://attached_assets/generated_videos/fluid-dynamics.mp4"
+type = "video"
+title = "2 · Fluid Dynamics Simulation"
+
+[[outputs]]
+id = "n5hEimJRfskapW8YDabgX"
+uri = "file://attached_assets/generated_videos/rom-visualization.mp4"
+type = "video"
+title = "3 · Reduced-Order Model Visualization"
+
+[[outputs]]
+id = "wlBCLBSyuWW6TufKkw5eQ"
+uri = "file://attached_assets/generated_videos/academic-highlights.mp4"
+type = "video"
+title = "4 · Academic Highlights"

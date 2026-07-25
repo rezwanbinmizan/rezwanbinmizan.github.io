@@ -37,10 +37,13 @@ export function HeroSection() {
                 Welcome
               </p>
               <p>
-                I am Md Rezwan Bin Mizan, a PhD candidate in Mathematics at the University of Houston. My research lies in numerical analysis, data-driven modeling, and fluid dynamics, with a focus on developing Reduced-Order Models (ROMs) for parametric partial differential equations. These methods make it possible to simulate complex physical systems efficiently and support both theoretical work and real-world applications.
+                I am Md Rezwan Bin Mizan, a recent PhD graduate in Mathematics from the University of Houston, where I defended my dissertation, "Parametric Low-Rank Model Reduction for Nonlinear Fluid Systems." My research lies in numerical analysis, data-driven modeling, and fluid dynamics. I develop reduced-order models (ROMs) for parametric nonlinear partial differential equations, using both projection-based and tensor low-rank approaches. These methods make it possible to simulate complex physical systems efficiently and support both theoretical work and real-world applications. My work has appeared in peer-reviewed journals including Computers & Fluids and Applied Mathematics and Computation.
               </p>
               <p>
-                Before starting my PhD, I worked as a lecturer at the American International University-Bangladesh (AIUB), where I developed a strong interest in teaching and mentoring students. I completed my BS and MS in Mathematics at the University of Dhaka, which laid the foundation for my research and academic goals. My work has appeared in peer-reviewed journals, and I stay active in the mathematical community as the treasurer of the University of Houston's AMS chapter.
+                Alongside my research, I have taught undergraduate mathematics in a variety of settings. I served as a lecturer at the American International University-Bangladesh (AIUB) from 2018 to 2021, and during my doctoral studies I taught at the University of Houston as both a teaching assistant and an instructor of record.
+              </p>
+              <p>
+                I earned my BS in Mathematics and MS in Applied Mathematics at the University of Dhaka, followed by a second MS in Applied Mathematics at the University of Houston. I remain active in the mathematical community, having served as treasurer of the University of Houston's AMS chapter.
               </p>
               <p>
                 Outside academics, I enjoy cricket, exploring different cuisines, and learning about history.

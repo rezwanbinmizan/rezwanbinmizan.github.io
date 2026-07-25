@@ -1,7 +1,7 @@
 export const portfolioData = {
   personal: {
     name: "Md Rezwan Bin Mizan",
-    title: "PhD Candidate in Mathematics",
+    title: "PhD in Mathematics",
     email: "mbinmiza@cougarnet.uh.edu",
     emailPersonal: "rezwanbinmizan@gmail.com",
     linkedin: "https://linkedin.com/in/md-rezwan-bin-mizan",

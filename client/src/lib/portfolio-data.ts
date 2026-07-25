@@ -53,13 +53,13 @@ export const portfolioData = {
       url: "https://arxiv.org/abs/2603.14101"
     },
     {
-      year: "2025",
-      type: "arXiv Preprint", 
+      year: "2026",
+      type: "Applied Mathematics and Computation, Elsevier",
       title: "Parametric Reduced Order Models for the Generalized Kuramoto–Sivashinsky Equations",
       authors: "Md Rezwan Bin Mizan, Maxim Olshanskii, and Ilya Timofeyev",
-      reference: "arXiv preprint, arXiv:2502.02718, 2025",
-      status: "preprint",
-      url: "https://arxiv.org/abs/2502.02718"
+      reference: "Applied Mathematics and Computation, 2026. DOI: 10.1016/j.amc.2026.130196",
+      status: "published",
+      url: "https://www.sciencedirect.com/science/article/abs/pii/S0096300326002481?dgcid=coauthor"
     },
     {
       year: "2024",

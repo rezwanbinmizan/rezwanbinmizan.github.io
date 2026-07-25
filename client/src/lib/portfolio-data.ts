@@ -95,7 +95,7 @@ export const portfolioData = {
       degree: "PhD in Mathematics",
       institution: "University of Houston, Texas, USA",
       period: "2021 - 2026",
-      status: "In progress - Expected Graduation: Summer 2026",
+      status: "Defended: June 16, 2026",
       advisor: "Professor Maxim Olshanskii",
       coAdvisor: "Professor Ilya Timofeyev"
     },

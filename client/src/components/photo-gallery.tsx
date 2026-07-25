@@ -8,7 +8,10 @@ export function PhotoGallery() {
     { src: "/images/poster-1.jpg", title: "Research Poster Presentation at GMU" },
     { src: "/images/summer-school.jpg", title: "During Summer School at Texas A&M" },
     { src: "/images/scientific-computing-seminar.jpg", title: "Scientific computing Seminar at UH" },
-    { src: "/images/siam-txla-2025.jpg", title: "SIAM TXLA 2025 UT Austin" }
+    { src: "/images/siam-txla-2025.jpg", title: "SIAM TXLA 2025 UT Austin" },
+    { src: "/images/phd-defense-1.jpg", title: "PhD Defense – June 16, 2026" },
+    { src: "/images/phd-defense-2.jpg", title: "PhD Defense – June 16, 2026" },
+    { src: "/images/phd-defense-3.jpg", title: "PhD Defense – June 16, 2026" }
   ];
 
   const PhotoCard = ({ photo }: { photo: { src: string; title: string } }) => (

@@ -1,0 +1,14 @@
+# Submit these URLs to search engines manually:
+
+Google: https://www.google.com/webmasters/tools/submit-url
+Bing: https://www.bing.com/webmaster/ping.aspx
+DuckDuckGo: https://duckduckgo.com/newbang
+
+Main URL to submit:
+https://rezwanbinmizan.github.io/
+
+Key Pages:
+https://rezwanbinmizan.github.io/#research
+https://rezwanbinmizan.github.io/#education
+https://rezwanbinmizan.github.io/#teaching
+https://rezwanbinmizan.github.io/#contact

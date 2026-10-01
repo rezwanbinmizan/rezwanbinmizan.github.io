@@ -5,10 +5,10 @@ Bing: https://www.bing.com/webmaster/ping.aspx
 DuckDuckGo: https://duckduckgo.com/newbang
 
 Main URL to submit:
-https://personal-showcase-rezwanbinmizan.replit.app/
+https://rezwanbinmizan.github.io/
 
 Key Pages:
-https://personal-showcase-rezwanbinmizan.replit.app/#research
-https://personal-showcase-rezwanbinmizan.replit.app/#education
-https://personal-showcase-rezwanbinmizan.replit.app/#teaching
-https://personal-showcase-rezwanbinmizan.replit.app/#contact
+https://rezwanbinmizan.github.io/#research
+https://rezwanbinmizan.github.io/#education
+https://rezwanbinmizan.github.io/#teaching
+https://rezwanbinmizan.github.io/#contact

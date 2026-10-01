@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Download, Mail, Linkedin } from "lucide-react";
 import { portfolioData } from "@/lib/portfolio-data";
+import { publicUrl } from "@/lib/public-url";
 
 export function HeroSection() {
   const { personal } = portfolioData;
@@ -8,7 +9,7 @@ export function HeroSection() {
   const handleDownloadCV = () => {
     // Create a proper download link
     const link = document.createElement('a');
-    link.href = '/attached_assets/CV_MD_REZWAN_1784954995720.pdf';
+    link.href = publicUrl("/attached_assets/CV_MD_REZWAN_1784954995720.pdf");
     link.download = 'CV_MD_Rezwan.pdf';
     link.target = '_blank';
     document.body.appendChild(link);
@@ -78,7 +79,7 @@ export function HeroSection() {
           <div className="lg:col-span-1">
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="/images/profile-1.jpg"
+                src={publicUrl("/images/profile-1.jpg")}
                 alt={personal.name}
                 className="w-full h-96 lg:h-[500px] object-cover"
               />

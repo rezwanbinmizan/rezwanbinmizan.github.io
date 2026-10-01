@@ -1,17 +1,18 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { publicUrl } from "@/lib/public-url";
 
 export function PhotoGallery() {
   // All photos in one array - just replace the image files to update
   const allPhotos = [
-    { src: "/images/conference-1.jpg", title: "GSPP Talk Photo 1" },
-    { src: "/images/conference-2.jpg", title: "GSPP Talk Photo 2" },
-    { src: "/images/poster-1.jpg", title: "Research Poster Presentation at GMU" },
-    { src: "/images/summer-school.jpg", title: "During Summer School at Texas A&M" },
-    { src: "/images/scientific-computing-seminar.jpg", title: "Scientific computing Seminar at UH" },
-    { src: "/images/siam-txla-2025.jpg", title: "SIAM TXLA 2025 UT Austin" },
-    { src: "/images/phd-defense-1.jpg", title: "PhD Defense – June 16, 2026" },
-    { src: "/images/phd-defense-2.jpg", title: "PhD Defense – June 16, 2026" },
-    { src: "/images/phd-defense-3.jpg", title: "PhD Defense – June 16, 2026" }
+    { src: publicUrl("/images/conference-1.jpg"), title: "GSPP Talk Photo 1" },
+    { src: publicUrl("/images/conference-2.jpg"), title: "GSPP Talk Photo 2" },
+    { src: publicUrl("/images/poster-1.jpg"), title: "Research Poster Presentation at GMU" },
+    { src: publicUrl("/images/summer-school.jpg"), title: "During Summer School at Texas A&M" },
+    { src: publicUrl("/images/scientific-computing-seminar.jpg"), title: "Scientific computing Seminar at UH" },
+    { src: publicUrl("/images/siam-txla-2025.jpg"), title: "SIAM TXLA 2025 UT Austin" },
+    { src: publicUrl("/images/phd-defense-1.jpg"), title: "PhD Defense – June 16, 2026" },
+    { src: publicUrl("/images/phd-defense-2.jpg"), title: "PhD Defense – June 16, 2026" },
+    { src: publicUrl("/images/phd-defense-3.jpg"), title: "PhD Defense – June 16, 2026" }
   ];
 
   const PhotoCard = ({ photo }: { photo: { src: string; title: string } }) => (

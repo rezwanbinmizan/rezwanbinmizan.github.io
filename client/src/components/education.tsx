@@ -39,6 +39,12 @@ export function Education() {
                       </p>
 
                       <div className="text-sm text-gray-600">
+                        {"dissertation" in edu && edu.dissertation && (
+                          <p><strong>Dissertation:</strong> {edu.dissertation}</p>
+                        )}
+                        {"gpa" in edu && edu.gpa && (
+                          <p><strong>GPA:</strong> {edu.gpa}</p>
+                        )}
                         {edu.advisor && (
                           <p><strong>Advisor:</strong> {edu.advisor}</p>
                         )}

@@ -3,9 +3,12 @@ import { publicUrl } from "./public-url";
 export const portfolioData = {
   personal: {
     name: "Md Rezwan Bin Mizan",
-    title: "PhD in Mathematics",
-    email: "mbinmiza@cougarnet.uh.edu",
+    title: "Postdoctoral Research Associate",
+    email: "mdrezwan@vt.edu",
     emailPersonal: "rezwanbinmizan@gmail.com",
+    phone: "+1 (346) 599-2287",
+    affiliation: "Department of Mathematics, Virginia Tech",
+    location: "Blacksburg, VA",
     linkedin: "https://linkedin.com/in/md-rezwan-bin-mizan",
     orcid: "https://orcid.org/0009-0000-3744-595X",
     googleScholar: "https://scholar.google.com/citations?user=-5tCF90AAAAJ&hl=en&authuser=1",
@@ -15,22 +18,22 @@ export const portfolioData = {
   researchInterests: [
     {
       title: "Reduced Order Modeling (ROM) and Tensorial ROM",
-      description: "Advanced ROM techniques for nonlinear PDEs",
+      description: "Reduced-order modeling for nonlinear and parametric partial differential equations",
       icon: "cube"
     },
     {
       title: "Machine Learning-enhanced ROMs",
-      description: "Deep learning ROMs (DL-ROM) and hybrid ROM approaches",
+      description: "Tensor-based methods and machine-learning-enhanced ROMs, including DL-ROM and hybrid approaches",
       icon: "brain"
     },
     {
       title: "Computational Fluid Dynamics",
-      description: "Multiphase flows, Non-Newtonian and Viscoplastic fluids (Herschel-Bulkley)",
+      description: "Non-Newtonian and viscoplastic flows, including Herschel–Bulkley fluids",
       icon: "wind"
     },
     {
       title: "Large-scale Parametric Simulations",
-      description: "Scientific computing for complex parametric systems",
+      description: "Large-scale scientific computing and efficient simulation of complex systems",
       icon: "chart-line"
     }
   ],
@@ -38,30 +41,30 @@ export const portfolioData = {
   publications: [
     {
       year: "2026",
-      type: "Computers & Fluids, Elsevier",
-      title: "A parametric tensor ROM for the shallow water dam break problem",
-      authors: "Md Rezwan Bin Mizan, Maxim Olshanskii, and Ilya Timofeyev",
-      reference: "Computers & Fluids, Volume 309, 107005, April 2026. DOI: 10.1016/j.compfluid.2026.107005",
-      status: "published",
-      url: "https://www.sciencedirect.com/science/article/abs/pii/S0045793026000472"
-    },
-    {
-      year: "2026",
-      type: "arXiv Preprint",
+      type: "International Journal for Numerical Methods in Fluids",
       title: "Reduced-Order Modeling of Parameterized Visco-Plastic Shallow Flows",
       authors: "Md Rezwan Bin Mizan, Maxim Olshanskii, and Ilya Timofeyev",
-      reference: "Under review at International Journal for Numerical Methods in Fluids, 2026. arXiv:2605.06526",
-      status: "preprint",
-      url: "https://arxiv.org/abs/2605.06526"
+      reference: "International Journal for Numerical Methods in Fluids, 2026. DOI: 10.1002/fld.70105",
+      status: "published",
+      url: "https://doi.org/10.1002/fld.70105"
     },
     {
       year: "2026",
-      type: "arXiv Preprint",
-      title: "Tensorial Reduced-Order Models for Parametric Coupled Reaction-Diffusion Systems: Application to Brain Tumor Growth Modeling",
-      authors: "Asikul Islam, Md Rezwan Bin Mizan, and Andreas Mang",
-      reference: "arXiv preprint, arXiv:2603.14101, 2026",
-      status: "preprint",
-      url: "https://arxiv.org/abs/2603.14101"
+      type: "Fluids",
+      title: "Comparison of a Parametric Physics-Informed Neural Network and a Tensorial Reduced-Order Model for the Shallow-Water Dam-Break Problem",
+      authors: "Anton Myshak, Md Rezwan Bin Mizan, and Ilya Timofeyev",
+      reference: "Fluids, 2026. DOI: 10.3390/fluids11100251",
+      status: "published",
+      url: "https://doi.org/10.3390/fluids11100251"
+    },
+    {
+      year: "2026",
+      type: "Computers & Fluids, Elsevier",
+      title: "A Parametric Tensor ROM for the Shallow Water Dam Break Problem",
+      authors: "Md Rezwan Bin Mizan, Maxim Olshanskii, and Ilya Timofeyev",
+      reference: "Computers & Fluids, 2026. DOI: 10.1016/j.compfluid.2026.107005",
+      status: "published",
+      url: "https://doi.org/10.1016/j.compfluid.2026.107005"
     },
     {
       year: "2026",
@@ -70,7 +73,16 @@ export const portfolioData = {
       authors: "Md Rezwan Bin Mizan, Maxim Olshanskii, and Ilya Timofeyev",
       reference: "Applied Mathematics and Computation, 2026. DOI: 10.1016/j.amc.2026.130196",
       status: "published",
-      url: "https://www.sciencedirect.com/science/article/abs/pii/S0096300326002481?dgcid=coauthor"
+      url: "https://doi.org/10.1016/j.amc.2026.130196"
+    },
+    {
+      year: "2026",
+      type: "Computers and Mathematics with Applications",
+      title: "Tensorial Reduced-Order Models for Parametric Coupled Reaction-Diffusion Systems: Application to Brain Tumor Growth Modeling",
+      authors: "Asikul Islam, Md Rezwan Bin Mizan, Maxim Olshanskii, and Andreas Mang",
+      reference: "Computers and Mathematics with Applications, under review, 2026. Preprint: arXiv:2603.14101",
+      status: "under review",
+      url: "https://arxiv.org/abs/2603.14101"
     },
     {
       year: "2024",
@@ -96,8 +108,10 @@ export const portfolioData = {
     {
       degree: "PhD in Mathematics",
       institution: "University of Houston, Texas, USA",
-      period: "2021 - 2026",
+      period: "Fall 2021 – Summer 2026",
       status: "Defended: June 16, 2026",
+      dissertation: "Parametric Low-Rank Model Reduction for Nonlinear Fluid Systems",
+      gpa: "3.746/4.00",
       advisor: "Professor Maxim Olshanskii",
       coAdvisor: "Professor Ilya Timofeyev"
     },
@@ -105,30 +119,39 @@ export const portfolioData = {
       degree: "MS in Applied Mathematics",
       institution: "University of Houston, Texas, USA",
       period: "Dec 2025",
-      status: "Completed"
+      status: "Completed",
+      gpa: "3.73/4.00"
     },
     {
       degree: "MS in Applied Mathematics",
       institution: "University of Dhaka, Bangladesh",
       period: "2016 - 2017",
       status: "Completed",
-      thesis: "Spectral Relaxation Approach on Convective Heat Transfer of Magnetic and Non-Magnetic Particles over a Stretching Cylinder with Induced Magnetic Enhancement"
+      thesis: "Spectral Relaxation Approach on Convective Heat Transfer of Magnetic and Non-Magnetic Particles over a Stretching Cylinder with Induced Magnetic Enhancement",
+      gpa: "3.90/4.00"
     },
     {
       degree: "BS in Mathematics",
       institution: "University of Dhaka, Bangladesh", 
       period: "2010 - 2015",
       status: "Completed",
-      project: "A Study of Differential Equations in Population Biology"
+      project: "A Study of Differential Equations in Population Biology",
+      gpa: "3.70/4.00 (CGPA)"
     }
   ],
 
   experience: [
     {
+      title: "Postdoctoral Research Associate",
+      organization: "Department of Mathematics, Virginia Tech",
+      period: "October 2026 – Present",
+      description: "Research in reduced-order modeling. Supervisor: Professor Traian Iliescu."
+    },
+    {
       title: "Research Assistant",
       organization: "Department of Mathematics, University of Houston",
-      period: "June 2024 – Present",
-      description: "Conducting advanced research in reduced order models and computational fluid dynamics under faculty supervision."
+      period: "June 2024 – August 2026",
+      description: "NSF Research Assistantship (DMS-2309197, DMS-2408978) on reduced-order models and computational fluid dynamics."
     },
     {
       title: "Graduate Teaching Assistant", 
@@ -147,6 +170,18 @@ export const portfolioData = {
       organization: "Texas A&M University",
       period: "May 12–16, 2025",
       description: "Scientific Machine Learning intensive training program organized by Texas A&M Institute of Data Science."
+    },
+    {
+      title: "Treasurer",
+      organization: "AMS Student Chapter, University of Houston",
+      period: "2023 – 2026",
+      description: "Managed chapter finances and supported organization of academic and student events."
+    },
+    {
+      title: "Public Relations & Publicity Secretary",
+      organization: "Bangladesh Graduate Student Association, University of Houston",
+      period: "2025 – 2026",
+      description: "Coordinated communications and promoted events for student engagement and outreach."
     },
     {
       title: "Lecturer",
@@ -174,7 +209,7 @@ export const portfolioData = {
     {
       title: "Graduate Student Paper Presentation",
       venue: "University of Houston",
-      date: "October 11-13, 2024",
+      date: "April 2024",
       type: "Talk",
       presentation: "POD–ROMs for the Generalized Kuramoto-Sivashinsky Equation (gKSE)"
     },
@@ -217,14 +252,19 @@ export const portfolioData = {
 
   awards: [
     {
+      title: "NSF Research Assistantship (DMS-2309197, DMS-2408978)",
+      organization: "University of Houston",
+      period: "2024 – 2026"
+    },
+    {
       title: "Graduate Tuition Fellowship",
       organization: "University of Houston",
-      period: "2021 – Present"
+      period: "2021 – 2026"
     },
     {
       title: "Teaching Assistantship",
       organization: "University of Houston", 
-      period: "2021 – Present"
+      period: "2021 – 2024"
     },
     {
       title: "NST Fellowship",
@@ -240,11 +280,11 @@ export const portfolioData = {
 
   documents: {
     cv: {
-      filename: "Rezwan_CV_2025.pdf",
+      filename: "CV_Md_Rezwan_Bin_Mizan.pdf",
       title: "Curriculum Vitae",
-      description: "Complete academic CV including research experience, publications, education background, teaching experience, professional achievements, leadership roles, and latest presentations. Updated with recent Scientific Computing Seminar presentation and current research work in Reduced Order Models and Computational Fluid Dynamics.",
-      lastUpdated: "September 2025",
-      downloadPath: publicUrl("/attached_assets/Rezwan_CV_2025.pdf")
+      description: "Academic CV including the Virginia Tech postdoctoral appointment, publications, education, teaching, talks, and fellowships.",
+      lastUpdated: "October 2026",
+      downloadPath: publicUrl("/attached_assets/CV_Md_Rezwan_Bin_Mizan.pdf")
     }
   }
 };

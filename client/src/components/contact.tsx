@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import { Mail, Linkedin, ExternalLink, GraduationCap } from "lucide-react";
+import { Mail, Linkedin, ExternalLink, GraduationCap, Phone, MapPin } from "lucide-react";
 import { portfolioData } from "@/lib/portfolio-data";
 
 export function Contact() {
@@ -53,12 +53,37 @@ export function Contact() {
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <div className="w-10 h-10 bg-academic-blue rounded-lg flex items-center justify-center mr-4">
+                      <MapPin className="text-white h-5 w-5" />
+                    </div>
+                    <div>
+                      <p className="text-sm text-gray-500">Affiliation</p>
+                      <p className="text-academic-dark font-medium">
+                        {personal.affiliation}
+                      </p>
+                      <p className="text-sm text-gray-600">{personal.location}</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center">
+                    <div className="w-10 h-10 bg-academic-blue rounded-lg flex items-center justify-center mr-4">
                       <Mail className="text-white h-5 w-5" />
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">Academic Email</p>
                       <p className="text-academic-dark font-medium">
                         {personal.email}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center">
+                    <div className="w-10 h-10 bg-academic-blue rounded-lg flex items-center justify-center mr-4">
+                      <Phone className="text-white h-5 w-5" />
+                    </div>
+                    <div>
+                      <p className="text-sm text-gray-500">Phone</p>
+                      <p className="text-academic-dark font-medium">
+                        {personal.phone}
                       </p>
                     </div>
                   </div>

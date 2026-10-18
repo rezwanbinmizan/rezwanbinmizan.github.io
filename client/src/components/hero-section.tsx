@@ -9,7 +9,7 @@ export function HeroSection() {
   const handleDownloadCV = () => {
     // Create a proper download link
     const link = document.createElement('a');
-    link.href = publicUrl("/attached_assets/CV_MD_REZWAN_1784954995720.pdf");
+    link.href = publicUrl("/attached_assets/CV_Md_Rezwan_Bin_Mizan.pdf");
     link.download = 'CV_MD_Rezwan.pdf';
     link.target = '_blank';
     document.body.appendChild(link);
@@ -38,13 +38,13 @@ export function HeroSection() {
                 Welcome
               </p>
               <p>
-                I am Md Rezwan Bin Mizan, a recent PhD graduate in Mathematics from the University of Houston, where I defended my dissertation, "Parametric Low-Rank Model Reduction for Nonlinear Fluid Systems." My research lies in numerical analysis, data-driven modeling, and fluid dynamics. I develop reduced-order models (ROMs) for parametric nonlinear partial differential equations, using both projection-based and tensor low-rank approaches. These methods make it possible to simulate complex physical systems efficiently and support both theoretical work and real-world applications. My work has appeared in peer-reviewed journals including Computers & Fluids and Applied Mathematics and Computation.
+                I am Md Rezwan Bin Mizan, a Postdoctoral Research Associate in the Department of Mathematics at Virginia Tech, working with Professor Traian Iliescu. I completed my PhD in Mathematics at the University of Houston in 2026, defending the dissertation "Parametric Low-Rank Model Reduction for Nonlinear Fluid Systems." My research develops reduced-order models for parametric nonlinear partial differential equations, using projection-based and tensor low-rank methods, with applications in computational fluid dynamics.
               </p>
               <p>
                 Alongside my research, I have taught undergraduate mathematics in a variety of settings. I served as a lecturer at the American International University-Bangladesh (AIUB) from 2018 to 2021, and during my doctoral studies I taught at the University of Houston as both a teaching assistant and an instructor of record.
               </p>
               <p>
-                I earned my BS in Mathematics and MS in Applied Mathematics at the University of Dhaka, followed by a second MS in Applied Mathematics at the University of Houston. I remain active in the mathematical community, having served as treasurer of the University of Houston's AMS chapter.
+                I earned my BS in Mathematics and MS in Applied Mathematics at the University of Dhaka, followed by a second MS in Applied Mathematics at the University of Houston. I served as treasurer of the University of Houston AMS Student Chapter from 2023 to 2026, and as Public Relations and Publicity Secretary of the Bangladesh Graduate Student Association in 2025–2026.
               </p>
               <p>
                 Outside academics, I enjoy cricket, exploring different cuisines, and learning about history.

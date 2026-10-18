@@ -89,7 +89,7 @@ export function Research() {
                         onClick={() => window.open(publication.url, '_blank')}
                       >
                         <ExternalLink className="mr-1 h-3 w-3" />
-                        {publication.status === "preprint" ? "View on arXiv" : "View Paper"}
+                        {publication.status === "preprint" || publication.status === "under review" ? "View on arXiv" : "View Paper"}
                       </Button>
                     </div>
                   )}

@@ -8,7 +8,7 @@ export function Teaching() {
       title: "Instructor of Record",
       institution: "University of Houston",
       department: "Department of Mathematics",
-      period: "Aug 2025 – Present",
+      period: "Aug 2025 – May 2026",
       responsibilities: [
         "Design and deliver a computation-driven linear algebra course integrating theoretical concepts with MATLAB-based applications.",
         "Develop assignments, exams, and coding projects emphasizing conceptual understanding and problem solving.",

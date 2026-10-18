@@ -28,8 +28,8 @@ export default function Home() {
             <div>
               <h3 className="text-lg font-semibold mb-4">About Md Rezwan Bin Mizan</h3>
               <p className="text-gray-300 text-sm leading-relaxed">
-                Md Rezwan Bin Mizan is a PhD candidate in Mathematics at the University of Houston, 
-                focused on advanced numerical methods and reduced-order modeling for complex physical systems.
+                Md Rezwan Bin Mizan is a Postdoctoral Research Associate in Mathematics at Virginia Tech,
+                focused on reduced-order modeling for nonlinear fluid systems.
               </p>
             </div>
             <div>
@@ -44,18 +44,18 @@ export default function Home() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Academic Affiliation</h3>
               <p className="text-gray-300 text-sm">
-                University of Houston<br />
+                Virginia Tech<br />
                 Department of Mathematics<br />
-                PhD Candidate & Research Assistant
+                Postdoctoral Research Associate
               </p>
             </div>
           </div>
           <div className="border-t border-gray-700 pt-8 text-center">
             <p className="text-gray-300 mb-2">
-              © 2025 Md Rezwan Bin Mizan. All rights reserved.
+              © 2026 Md Rezwan Bin Mizan. All rights reserved.
             </p>
             <p className="text-gray-400 text-sm">
-              Academic Portfolio | PhD Candidate in Mathematics | University of Houston
+              Academic Portfolio | Postdoctoral Research Associate | Virginia Tech
             </p>
           </div>
         </div>
